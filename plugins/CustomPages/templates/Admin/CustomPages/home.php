@@ -24,7 +24,7 @@ $this->extend('/Admin/Common/edit');
                     </legend>
                     <?php echo $this->Form->editor('text_1', ['label' => 'Editor', 'class' => 'span-6']); ?> 
                     <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Editor inline', 'class' => 'span-6']); ?>
-                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Hero image', 'width' => 1920, 'height' => 1080, 'mobile' => ['width' => 480, 'height' => 890]]); ?>
+                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Hero image', 'width' => 1920,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
                     <?php echo $this->element('admin/uploader/file', ['scope' => 'file-1', 'title' => 'Allegato:  catalogo']); ?>
                     <?php echo $this->element('admin/uploader/icon', ['scope' => 'icon-1', 'title' => 'Icona della sezione']); ?>
                     <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery', 'title' => 'Griglia immagini']); ?>

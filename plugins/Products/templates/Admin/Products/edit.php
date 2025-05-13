@@ -11,9 +11,8 @@
                     </legend>
                     <?php
 
-					echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-6']);
-					echo $this->Form->control('product_category_id', ['label' => __dx($po, 'admin', 'product_category_id'), 'options' => $productCategories, 'empty' => __d('admin', 'Seleziona'), 'extraClass' => 'span-5']);
-					echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-1']);
+					echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-9']);
+    					echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-2']);
                     ?>
                 </fieldset>
 
@@ -33,7 +32,7 @@
                             echo $this->Form->editor('text', ['label' => __d('admin', 'text')]);
 
                             echo $this->element('admin/uploader/gallery', [
-                                'scope' => 'gallery'
+                                'scope' => 'gallery',
                             ]);
                         ?>
                 

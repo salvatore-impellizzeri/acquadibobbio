@@ -28,9 +28,9 @@ return [
     'Datasources' => [
         'default' => [
             'host' => 'dev.webmotion.it',
-            'username' => '',
-            'password' => '',
-            'database' => '',
+            'username' => 'acquadibobbio_wm',
+            'password' => 's5G?LUq$e4ygalc03Zc0u&ynUwN$s9sl',
+            'database' => 'acquadibobbio_wm',
             'url' => env('DATABASE_URL', null),
             'log' => false, // da abilitare per loggare le query nel queriesLog
             'quoteIdentifiers' => false, // serve a quotare parole riservate di mySQL usate come campi del database. Evitare di usarle e non attivarlo se possibile perché riduce performance

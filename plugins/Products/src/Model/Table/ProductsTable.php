@@ -59,9 +59,9 @@ class ProductsTable extends AppTable
             ->integer('id')
             ->allowEmptyString('id', null, 'create');
 
-		$validator
-            ->integer('product_category_id')
-            ->notEmptyString('product_category_id');
+		// $validator
+        //     ->integer('product_category_id')
+        //     ->notEmptyString('product_category_id');
 
 
         $validator

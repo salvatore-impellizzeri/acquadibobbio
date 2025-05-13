@@ -71,12 +71,12 @@ class ProductCategoriesTable extends AppTable
     }
 
 
-    public function buildRules(RulesChecker $rules): RulesChecker
-    {
-        $rules->add($rules->existsIn('parent_id', 'ParentProductCategories'), ['errorField' => 'parent_id']);
+    // public function buildRules(RulesChecker $rules): RulesChecker
+    // {
+    //     $rules->add($rules->existsIn('parent_id', 'ParentProductCategories'), ['errorField' => 'parent_id']);
 
-        return $rules;
-    }
+    //     return $rules;
+    // }
 
     public function beforeDelete(EventInterface $event, EntityInterface $entity, ArrayObject $options){
         

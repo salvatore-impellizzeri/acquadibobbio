@@ -31,7 +31,7 @@ class ProductCategoriesController extends AppController
         $items = $this->ProductCategories->find('threaded')
             ->order(['ProductCategories.lft' => 'ASC'])
             ->find('translations')
-            ->toArray();
+            ->all();
 
         $this->set('maxDepth', $this->ProductCategories->behaviors()->get('Tree')->getConfig('maxDepth') ?? 10);
         $this->set(compact('items'));

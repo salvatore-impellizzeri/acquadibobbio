@@ -24,13 +24,12 @@ $this->set('statusBarSettings', [
                 </legend>
                 <?php
                 echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-5']);
-                echo $this->Form->control('parent_id', ['label' => __dx($po, 'admin', 'parent'), 'options' => $parents, 'empty' => __d('admin', 'Select'), 'extraClass' => 'span-5']);
                 echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-2']);
                 ?>
         
                 <?php
-                // echo $this->Form->control('excerpt', ['label' => __d('admin', 'excerpt')]);
-                // echo $this->Form->control('text', ['label' => __d('admin', 'text')]);
+                echo $this->Form->control('excerpt', ['label' => __d('admin', 'excerpt')]);
+                echo $this->Form->control('text', ['label' => __d('admin', 'text')]);
                 ?>
             </fieldset>
         </div>
