@@ -1,20 +1,5 @@
 <?php
 $this->extend('/Admin/Common/index');
-
-if(!empty( $this->request->getQuery('product_category_id'))) {
-	$this->set('conditions', ['Products.product_category_id' => $this->request->getQuery('product_category_id')]);
-}
-
-$this->set('controlsSettings', [
-	'filters' => [
-		[
-			'field' => 'product_category_id',
-			'options' => $productCategories,
-			'label' => __dx($po, 'admin', 'product_category_id'),
-			'empty' => __d('admin', 'all f')
-		]
-	]
-]);
 ?>
 
 <?= $this->Table->start() ?>
@@ -24,9 +9,6 @@ $this->set('controlsSettings', [
 		</th>
         <th class="main-column">
             <?php echo $this->Table->sort(__d('admin', 'title'), 'Products.title') ?>
-        </th>
-		<th>
-            <?php echo $this->Table->sort(__dx($po, 'admin', 'product_category_id'), 'ProductCategories.title') ?>
         </th>
 
 		<?php if (TRANSLATION_ACTIVE): ?>
@@ -50,9 +32,6 @@ $this->set('controlsSettings', [
             <th scope="row">
                 <?= $this->Table->editLink() ?>
             </th>
-			<td>
-				{{ record.product_category.title }}
-			</td>
 
 			<?php if (TRANSLATION_ACTIVE): ?>
 				<td>
