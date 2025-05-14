@@ -20,18 +20,52 @@ $this->extend('/Admin/Common/edit');
 
                 <fieldset class="input-group">
                     <legend class="input-group__info">
-                        Parte alta
+                        Hero
                     </legend>
-                    <?php echo $this->Form->editor('text_1', ['label' => 'Editor', 'class' => 'span-6']); ?> 
-                    <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Editor inline', 'class' => 'span-6']); ?>
-                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Hero image', 'width' => 1920,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
-                    <?php echo $this->element('admin/uploader/file', ['scope' => 'file-1', 'title' => 'Allegato:  catalogo']); ?>
-                    <?php echo $this->element('admin/uploader/icon', ['scope' => 'icon-1', 'title' => 'Icona della sezione']); ?>
-                    <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery', 'title' => 'Griglia immagini']); ?>
-                    <?php echo $this->element('admin/uploader/file-set',['scope' => 'fileset-1', 'title' => 'Allegati fine news']); ?>
-                    <?php echo $this->element('admin/uploader/icon-set', ['scope' => 'iconset', 'title' => 'Set icone servizi']); ?>
+                    <?php echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->control('string_2', ['label' => 'Sottotitolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->element('admin/uploader/icon', ['scope' => 'logo', 'title' => 'Logo']); ?>
+                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Immagine', 'width' => 1920,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
+                </fieldset>
 
-                    <?php echo $this->Form->geocode('geocode'); ?>
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Sezione prodotti
+                    </legend>
+                    <?php echo $this->Form->control('string_3', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery-1', 'title' => 'Preview prodotti']); ?>
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Nuovo prodotto
+                    </legend>
+                    <?php echo $this->Form->control('string_4', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-6']); ?> 
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Prima immagine statica
+                    </legend>
+                    <?php echo $this->Form->editor('text_2', ['label' => 'Testo', 'class' => 'span-6']); ?> 
+                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-2', 'title' => 'Immagine', 'width' => 1920,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Seconda immagine statica
+                    </legend>
+                    <?php echo $this->Form->control('string_5', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->editor('text_3', ['label' => 'Testo', 'class' => 'span-6']); ?> 
+                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-3', 'title' => 'Immagine', 'width' => 1076,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Carosello in loop
+                    </legend>
+                    <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery-2', 'title' => 'Galleria immagini']); ?>
                 </fieldset>
 
             </div>
@@ -41,10 +75,3 @@ $this->extend('/Admin/Common/edit');
     </div>
 
 <?php echo $this->element('admin/save');?>
-
-<?= $this->Form->end() ?>
-
-<?php 
-$coords = !empty($item->geocode) ? $item->geocode : null;
-$this->element('admin/geocode-script', array('coords' => $coords));
-?>
