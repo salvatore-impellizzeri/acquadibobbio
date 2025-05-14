@@ -25,7 +25,6 @@ $this->extend('/Admin/Common/edit');
                     <?php echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
                     <?php echo $this->Form->control('string_2', ['label' => 'Sottotitolo', 'extraClass' => 'span-10']); ?>
                     <?php echo $this->element('admin/uploader/icon', ['scope' => 'logo', 'title' => 'Logo']); ?>
-                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Immagine', 'width' => 1920,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
                 </fieldset>
 
                 <fieldset class="input-group">
