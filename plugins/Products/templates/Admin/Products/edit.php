@@ -20,8 +20,7 @@
                         Contenuto
                     </legend>
                     <?php
-                        echo $this->Form->control('name', ['label' => "Nome prodotto"]);
-                        echo $this->Form->control('subtitle', ['label' => "Sottotitolo"]);
+                        echo $this->Form->control('subname', ['label' => "Sottotitolo"]);
 
                         echo $this->element('admin/uploader/image', [
                             'scope' => 'preview',
