@@ -39,7 +39,8 @@ $this->extend('/Admin/Common/edit');
                         Nuovo prodotto
                     </legend>
                     <?php echo $this->Form->control('string_4', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
-                    <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-6']); ?> 
+                    <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-10']); ?>
+                    <?php echo $this->Form->inlineEditor('string_6', ['label' => 'Bottone', 'class' => 'span-10']); ?> 
                 </fieldset>
 
                 <fieldset class="input-group">
