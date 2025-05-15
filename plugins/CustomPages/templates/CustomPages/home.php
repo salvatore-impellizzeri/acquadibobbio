@@ -3,11 +3,15 @@
     <!-- HERO -->
     <div class="home__hero container-fluid">
         <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
-        <div class="home__hero__content container-hero py-64 px-92 text-center">
-            <div class="home__hero__img">
+        <div class="home__hero__content container-hero text-center">
+            <div class="home__hero__img mb-44">
                 <img src="<?= $this->Frontend->image($images['logo']['path']); ?>" alt="<?= $images['logo']['title'] ?>">
             </div>
             <h1 class="font-96"><?= $item->string_1 ?></h1>
+            <h4 class="font-20 fw-light font-secondary"><?= $item->string_2 ?></h4>
+        </div>
+        <div class="font-20 fw-book font-secondary home__hero__scroll text-center">
+            Scroll <?= $this->Frontend->svg('icons/arrow-down.svg') ?>
         </div>
     </div>
 </div>
