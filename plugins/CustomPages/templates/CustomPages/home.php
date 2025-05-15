@@ -1,7 +1,7 @@
 <div class="home">
 
     <!-- HERO -->
-    <div class="home__hero container-fluid">
+    <div class="home__hero">
         <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
         <div class="home__hero__content container-hero text-center">
             <div class="home__hero__img mb-44">
@@ -22,10 +22,18 @@
     ]) ?>
 
     <!-- NEW PRODUCT -->
-    <?= $this->element('info', [
-        'title' => $item->string_4,
-        'text' => $item->text_1,
-        'label' => $item->string_6, 
-        'url' => '#'
-    ]) ?>
+    <div class="home__new-product">
+        <?= $this->element('info', [
+            'title' => $item->string_4,
+            'text' => $item->text_1,
+            'label' => $item->string_6, 
+            'url' => '#'
+        ]) ?>
+    </div>
+
+    <!-- BIG IMG -->
+    <div class="home__big-img text-center">
+        <img src="<?= $this->Frontend->image($images['image-2']['path']);  ?>" alt="<?= $images['image-2']['title'] ?>">
+        <?= $item->text_2 ?>
+    </div>
 </div>

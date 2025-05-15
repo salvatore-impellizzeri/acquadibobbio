@@ -2,6 +2,7 @@
     &__hero{
         position: relative;
         height: 100vh;
+        width: 100%;
         color: @white;
         display: flex;
         justify-content: center;
@@ -53,4 +54,38 @@
         }
     }
 
+    &__new-product{
+        height: clamp(300px, 883vw * @px2vw, 883px);
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: clamp(20px, 86vw * @px2vw, 86px);
+    }
+
+    &__big-img{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        color: @white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+            z-index: -1;
+        }
+
+        p{
+            .font-64;
+            .container-text-inside;
+        }
+    }
 }
