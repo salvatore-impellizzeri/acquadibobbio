@@ -32,7 +32,6 @@ $this->extend('/Admin/Common/edit');
                         Sezione prodotti
                     </legend>
                     <?php echo $this->Form->control('string_3', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
-                    <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery-1', 'title' => 'Preview prodotti']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">

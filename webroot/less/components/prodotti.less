@@ -1,0 +1,23 @@
+.prodotti{
+    &__cols{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(20px, 61vw * @px2vw, 61px);
+    }
+
+    h1{
+        width: clamp(200px, 585vw * @px2vw, 585px);
+
+    }
+
+    &__img{
+        width: clamp(200px, 414vw * @px2vw, 414px);
+        height: clamp(240px, 494vw * @px2vw, 494px);
+        margin-bottom: 2.1rem;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

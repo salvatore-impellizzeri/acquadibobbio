@@ -14,4 +14,14 @@
             Scroll <?= $this->Frontend->svg('icons/arrow-down.svg') ?>
         </div>
     </div>
+
+
+
+    <!-- PRODOTTI -->
+    <div>
+        <?= $this->element('prodotti', [
+            'title' => $item->string_3,
+            'titleClass' => 'font-64 mb-134'
+        ]) ?>
+    </div>
 </div>
