@@ -1,5 +1,4 @@
 <div class="home">
-
     <!-- HERO -->
     <div class="home__hero">
         <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
@@ -33,7 +32,7 @@
 
     <!-- BIG IMG -->
     <div class="home__big-img text-center">
-        <img src="<?= $this->Frontend->image($images['image-2']['path']);  ?>" alt="<?= $images['image-2']['title'] ?>">
+        <img src="<?= $this->Frontend->image($images['image-2']['path']); ?>" alt="<?= $images['image-2']['title'] ?>">
         <?= $item->text_2 ?>
     </div>
 
@@ -46,8 +45,23 @@
         'cta' => $item->string_6,
         'url' => '#',
         'word_1' => $item->string_7,
-        'word_2' => $item->string_8
+        'word_2' => $item->string_8,
+        'extraClass' => 'mb-175'
     ]) ?>
 
-    <!--  -->
+    <!-- GALLERY LOOP -->
+    <div class="swiper swiper--loop">
+        <div class="swiper-wrapper">
+            <?php foreach ($images['gallery-2'] as $img) { ?>
+                <div class="swiper-slide">
+                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+                </div>
+            <?php } ?>
+            <?php foreach ($images['gallery-2'] as $img) { ?>
+                <div class="swiper-slide">
+                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+                </div>
+            <?php } ?>
+        </div>
+    </div>
 </div>

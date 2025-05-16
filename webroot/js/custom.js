@@ -287,3 +287,19 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+// SWIPER LOOP
+
+const swiperMethods = new Swiper('.swiper--loop', {
+ 	spaceBetween: 19,
+	speed: 6000,
+	autoplay: {
+		delay: 1,
+		disableOnInteraction: false,
+	},
+	loop: true,
+	slidesPerView: 4,
+	allowTouchMove: false,
+	loopAdditionalSlides: 3,
+	touchMoveStopPropagation: false,
+});

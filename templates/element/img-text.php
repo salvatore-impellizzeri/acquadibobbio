@@ -1,4 +1,4 @@
-<div class="img-text container-l m-auto">
+<div class="img-text container-l m-auto <?= $extraClass ?? '' ?>">
     <div class="img-text__img">
         <img src="<?= $this->Frontend->image($img) ?>" alt="<?= $alt ?>">
         <div class="img-text__img__word-1">
