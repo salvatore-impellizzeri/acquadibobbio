@@ -1,13 +1,12 @@
 .footer {
     display: flex;
-    height: 80px;
     align-items: center;
-    padding: 0 clamp(10px, 75vw * @px2vw, 75px);
-    font-size: 12px;
-    background: @footer-bg;
-    color: @footer-color;
+    .font-15;
+    padding: clamp(30px, 165vw * @px2vw, 165px) clamp(10px, 128vw * @px2vw, 128px) clamp(130px, 241vw * @px2vw, 241px);
+    .font-secondary;
     gap: clamp(10px, 90vw * @px2vw, 90px);
-    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
 
 
     @media screen and (max-width: @tablet-l) {
@@ -22,6 +21,27 @@
         color: inherit;
     }
 
+    &__info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(20px, 174vw * @px2vw, 174px);
+
+        &__agency{
+            width: clamp(100px, 240vw * @px2vw, 240px)
+        }
+
+        label{
+            .fw-medium;
+            .font-16;
+            text-transform: uppercase;
+            margin-bottom: 0.3em;
+        }
+
+        p{
+            font-weight: 400;
+        }
+    }
+
     &__social{
         margin-left: auto;
 
@@ -32,13 +52,12 @@
 
     &__legal{
         display: flex;
+        text-transform: uppercase;
+        opacity: 50%;
         justify-content: center;
         gap: 10px;
         color: black;
-
-        span{
-            text-decoration: underline;
-        }
+        margin-left: auto;
     }
 
     .menu{
@@ -51,5 +70,18 @@
             gap: 1em;
             justify-content: center;
         }
+    }
+
+    &__bottom{
+        font-family: @main-font;
+        text-transform: uppercase;
+        color: @blue-light;
+        opacity: 30%;
+        width: 100%;
+        text-align: center;
+        .font-143;
+        position: absolute;
+        bottom: -0.48em;
+        left: 0;
     }
 }
