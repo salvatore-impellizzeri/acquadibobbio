@@ -17,7 +17,7 @@
     <!-- PRODOTTI -->
     <?= $this->element('prodotti', [
         'title' => $item->string_3,
-        'titleClass' => 'font-64 mb-134'
+        'titleClass' => 'font-64 mb-134 pt-h'
     ]) ?>
 
     <!-- NEW PRODUCT -->

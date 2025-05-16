@@ -5,15 +5,15 @@
     ->all();
 ?>
 
-<div class="prodotti text-center container-prodotti m-auto pt-h">
-    <h1 class="<?= $titleClass ?? '' ?> m-auto">
-        <?= $title ?>
-    </h1>
-    <?php if(isset($description)) { ?>
-        <p>
+<div class="prodotti text-center container-prodotti m-auto">
+    <div class="font-64 <?= $description ? 'mb-134' : '' ?>">
+        <h1 class="m-auto <?= $titleClass ?? '' ?> ">
+            <?= $title ?>
+        </h1>
+        <?php if(isset($description)) { ?>
             <?= $description ?>
-        </p>
-    <?php } ?>
+        <?php } ?>
+    </div>
     <div class="prodotti__cols">
         <?php foreach ($products as $product) { ?>
             <div class="prodotti__item">

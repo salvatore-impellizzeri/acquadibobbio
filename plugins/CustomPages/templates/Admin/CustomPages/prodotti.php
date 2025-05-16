@@ -22,7 +22,8 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Contenuto
                     </legend>
-                    <?php echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->inlineEditor('string_1', ['label' => 'Titolo', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->editor('text_1', ['label' => 'Descrizione', 'extraClass' => 'span-12']); ?>
                 </fieldset>
 
             </div>
