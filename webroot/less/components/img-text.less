@@ -1,0 +1,48 @@
+.img-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: clamp(0px, 53vw * @px2vw, 53px);
+
+    &__img{
+        position: relative;
+        color: @white;
+        .font-180;
+        overflow: hidden;
+
+        &__word-1,
+        &__word-2{
+            position: absolute;
+        }
+
+        &__word-1{
+            top: -0.07em;
+            right: -0.02em;
+        }
+
+        &__word-2{
+            bottom: -0.30em;
+            left: -0.07em;
+        }
+    }
+
+    &__text{
+        margin-left: auto;
+        align-self: center;
+        width: clamp(200px, 547vw * @px2vw, 547px);
+
+        h2{
+            margin-bottom: 0.4em;
+        }
+        
+        p{
+            .font-18;
+            .font-secondary;
+            .fw-book;
+            margin-bottom: 2.5em;
+        }
+
+        .cta{
+            margin-left: 2.1em;
+        }
+    }
+}

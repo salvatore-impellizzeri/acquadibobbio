@@ -36,4 +36,18 @@
         <img src="<?= $this->Frontend->image($images['image-2']['path']);  ?>" alt="<?= $images['image-2']['title'] ?>">
         <?= $item->text_2 ?>
     </div>
+
+    <!-- CONTATTACI -->
+    <?= $this->element('img-text', [
+        'img' => $images['image-3']['path'],
+        'alt' => $images['image-3']['title'],
+        'title' => $item->string_5,
+        'text' => $item->text_3,
+        'cta' => $item->string_6,
+        'url' => '#',
+        'word_1' => $item->string_7,
+        'word_2' => $item->string_8
+    ]) ?>
+
+    <!--  -->
 </div>
