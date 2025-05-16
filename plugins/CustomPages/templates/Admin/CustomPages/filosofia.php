@@ -22,7 +22,7 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Prima galleria
                     </legend>
-                    <?php echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->inlineEditor('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
                     <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-6']); ?> 
                     <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery-1', 'title' => 'Griglia immagini']); ?>
                 </fieldset>

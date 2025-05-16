@@ -1,0 +1,32 @@
+.triple-img{
+    position: relative;
+    height: clamp(400px, 822vw * @px2vw, 822px);
+    overflow: hidden;
+
+    &--secondary{
+        img{
+            position: absolute;
+        }
+
+        & :first-child{
+            bottom: 0;
+            left: 0;
+            transform: translateX(-2.5rem);
+            width: clamp(150px, 547vw * @px2vw, 547px);
+        }
+
+        & :nth-child(2){
+            top: clamp(20px, 97vw * @px2vw, 97px);
+            left: clamp(150px, 545vw * @px2vw, 545px);
+            width: clamp(100px, 425vw * @px2vw, 425px);
+        }
+
+        & :nth-child(3){
+            top: 0;
+            right: 0;
+            transform: translateX(2.5rem);
+            width: clamp(150px, 547vw * @px2vw, 547px);
+            height: clamp(210px, 735vw * @px2vw, 735px);
+        }
+    }
+}
