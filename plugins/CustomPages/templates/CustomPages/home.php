@@ -31,10 +31,11 @@
     </div>
 
     <!-- BIG IMG -->
-    <div class="home__big-img text-center">
-        <img src="<?= $this->Frontend->image($images['image-2']['path']); ?>" alt="<?= $images['image-2']['title'] ?>">
-        <?= $item->text_2 ?>
-    </div>
+    <?= $this->element('big-img', [
+        'img' => $images['image-2'],
+        'text' => $item->text_2,
+        'extraClass' => 'mb-193'
+    ]) ?>
 
     <!-- CONTATTACI -->
     <?= $this->element('img-text', [

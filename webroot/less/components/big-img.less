@@ -1,0 +1,25 @@
+.big-img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: @white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        z-index: -1;
+    }
+
+    p{
+        .font-64;
+        .container-paragraph;
+    }
+}

@@ -31,7 +31,7 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Seconda galleria
                     </legend>
-                    <?php echo $this->Form->control('string_2', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
                     <?php echo $this->Form->editor('text_2', ['label' => 'Testo', 'class' => 'span-6']); ?> 
                     <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery-2', 'title' => 'Galleria immagini']); ?>
                     <?php echo $this->Form->editor('text_3', ['label' => 'Testo sotto la galleria', 'class' => 'span-6']); ?> 
@@ -41,9 +41,11 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Sezione prima immagine statica
                     </legend>
+                    <?php echo $this->Form->control('string_3', ['label' => 'Titolo', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->editor('text_4', ['label' => 'Testo', 'class' => 'span-12']); ?> 
                     <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Immagine', 'width' => 1076,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
-                    <?php echo $this->Form->control('string_3', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
-                    <?php echo $this->Form->editor('text_4', ['label' => 'Testo', 'class' => 'span-6']); ?> 
+                    <?php echo $this->Form->control('string_4', ['label' => 'Primo testo immagine', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->control('string_5', ['label' => 'Secondo testo immagine', 'extraClass' => 'span-12']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">
