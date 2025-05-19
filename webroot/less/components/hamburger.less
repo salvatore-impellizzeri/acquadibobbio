@@ -6,6 +6,33 @@
     border-radius: 1000px;
     position: relative;
     cursor: pointer;
+    z-index: 500;
+    transition: 0.3s ease-in-out;
+
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 1000px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: @black;
+        transition: 0.5s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    &.open::before {
+        top: clamp(-23px, -23vw * @px2vw, -11px);
+        right: clamp(-39px, -39vw * @px2vw, -10px);
+        transform: scale(50);
+        border-radius: 0;
+        background-color: #1A1A1A;
+    }
+
+    &.open{
+        background-color: #1A1A1A;
+    }
+
     span{
         position: absolute;
         height: 1px;
