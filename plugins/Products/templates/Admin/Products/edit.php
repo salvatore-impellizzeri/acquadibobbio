@@ -77,6 +77,8 @@
         
                     <?php echo $this->Form->control('detail_4', ['label' => 'Quarto dettaglio', 'class' => 'span-10']); ?>
                     <?php echo $this->Form->control('info_detail_4', ['label' => 'Info quarto dettaglio', 'class' => 'span-10']); ?> 
+                    
+                    <?php echo $this->Form->control('button', ['label' => 'Bottone', 'class' => 'span-10']); ?> 
                 </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>
