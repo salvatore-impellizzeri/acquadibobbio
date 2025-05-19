@@ -1,14 +1,13 @@
 .header{
-    height: 120px; //se si modifica l'altezza dell'header controlla anche le altezze delle hero
+    height: 120px;
     position: fixed;
     top: 0;
     right: 0;
-    padding: 0 clamp(10px, 40vw * @px2vw, 40px);
+    padding-top: clamp(10px, 22vw * @px2vw, 22px);
+    padding-right: clamp(10px, 39vw * @px2vw, 39px);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 10px;
-    font-size: 14px;
     z-index: 500;
     transition: 300ms @easeOutQuad;
 
@@ -65,10 +64,6 @@
         @media screen and (max-width: @tablet-l) {
             display: none;            
         }
-    }
-
-    &__hamburger{
-        margin-right: 20px;
     }
 
     &__hamburger-mobile{
