@@ -14,15 +14,17 @@
     ]) ?>
 
     <!-- NATURA -->
-    <div class="container-text m-auto mb-214">
+    <div class="m-auto mb-214">
         <?= $this->element('info', [
             'title' => $item->string_2,
             'text' => $item->text_2,
             'extraClass' => 'mb-148'
         ]) ?>
-        <div class="cols-3">
+        <div class="cols-3 m-auto">
             <?php foreach ($images['gallery-2'] as $img) { ?>
-                <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+                <?php if($img['path']): ?>
+                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+                <?php endif; ?>
             <?php } ?>
         </div>
     </div>

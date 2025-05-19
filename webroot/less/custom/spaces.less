@@ -26,11 +26,11 @@
         margin-bottom: 2.09em;
     }
 
-    .mb-148{
-        margin-bottom: 2.31em;
-    }
-
     //PX
+
+    .mb-148{
+        margin-bottom: clamp(40px, 148vw * @px2vw, 148px);
+    }
 
     .mb-175{
         margin-bottom: clamp(60px, 175vw * @px2vw, 175px)
@@ -72,5 +72,6 @@
 .cols-3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: clamp(300px, 1145vw * @px2vw, 1145px);
     gap: clamp(10px, 30vw * @px2vw, 30px);
 }
