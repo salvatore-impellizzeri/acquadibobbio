@@ -80,6 +80,13 @@
                     
                     <?php echo $this->Form->control('button', ['label' => 'Bottone', 'class' => 'span-10']); ?> 
                 </fieldset>
+
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Bottom
+                    </legend>
+                    <?php echo $this->Form->editor('video_text', ['label' => 'Testo sul video', 'class' => 'span-10']); ?> 
+                </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>
 			<?php echo $this->element('admin/tab-social');?>           

@@ -1,6 +1,10 @@
 <div class="big-img text-center <?= $extraClass ?? '' ?>">
-    <?php if($img['path']): ?>
-        <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+    <?php if(isset($img['path']) && !isset($video)): ?>
+        <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?? '' ?>">
+    <?php elseif(isset($video)): ?>
+        <video autoplay muted loop playsinline>
+            <source src="<?= $img ?>" type="video/mp4">
+        </video>
     <?php endif; ?>
     <?= $text ?? '' ?>
 </div>

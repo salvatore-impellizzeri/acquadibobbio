@@ -83,8 +83,17 @@
         'extraClass' => 'mb-148'
     ]); ?>
 
-    <?= $this->element('cta', [
-        'label' => $item->$item->button,
-        'url' => '#',
-    ]); ?>
+    <div class="text-center mb-156">
+        <?= $this->element('cta', [
+            'label' => $item->button,
+            'url' => '#',
+        ]); ?>
+    </div>
+
+    <!-- BIG IMG -->
+    <?= $this->element('big-img', [
+        'img' => 'img/video/video-2.mp4',
+        'text' => $item->video_text,
+        'video' => true,
+    ]) ?>
 </article>
