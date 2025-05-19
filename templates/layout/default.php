@@ -3,7 +3,7 @@
 <?php echo $this->element('head') ?>
 
 <body class="body <?php echo $this->fetch('bodyClass') ?>">
-
+    <?= $this->element('cursor'); ?>
     <?php
     echo $this->element('header', [
         'extraClass' => $this->fetch('headerClass') ?? false,

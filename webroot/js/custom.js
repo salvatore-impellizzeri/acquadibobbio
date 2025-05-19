@@ -303,3 +303,14 @@ const swiperMethods = new Swiper('.swiper--loop', {
 	loopAdditionalSlides: 3,
 	touchMoveStopPropagation: false,
 });
+
+// CURSOR
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cursor = document.querySelector('[data-cursor-follow]');
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    });
+});
