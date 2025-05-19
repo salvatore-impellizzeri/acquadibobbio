@@ -1,10 +1,40 @@
 .triple-img{
     position: relative;
-    height: clamp(400px, 822vw * @px2vw, 822px);
     overflow: hidden;
     margin-bottom: clamp(50px, 172vw * @px2vw, 172px);
 
+    &--products{
+        height: clamp(400px, 985vw * @px2vw, 985px);
+
+        img{
+            position: absolute;
+        }
+
+        & :first-child{
+            bottom: clamp(30px, 190vw * @px2vw, 190px);
+            left: 0;
+            transform: translateX(-2.5rem);
+            width: clamp(150px, 567vw * @px2vw, 567px);
+        }
+
+        & :nth-child(2){
+            top: clamp(20px, 97vw * @px2vw, 97px);
+            left: 51%;
+            transform: translateX(-50%);
+            width: clamp(100px, 445vw * @px2vw, 445px);
+        }
+
+        & :nth-child(3){
+            bottom: 0;
+            right: 0;
+            transform: translateX(2.5rem);
+            width: clamp(150px, 547vw * @px2vw, 547px);
+        }
+    }
+
     &--secondary{
+        height: clamp(400px, 822vw * @px2vw, 822px);
+
         img{
             position: absolute;
         }
