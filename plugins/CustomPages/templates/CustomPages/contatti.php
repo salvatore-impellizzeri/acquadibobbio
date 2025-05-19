@@ -1,8 +1,6 @@
 <div class="contacts">
     <div class="contacts__infos">
-        <h1><?= $item->title ?></h1>
-
-        <?= $item->text_1 ?>
+        
     </div>
 
     <div class="contacts__form">

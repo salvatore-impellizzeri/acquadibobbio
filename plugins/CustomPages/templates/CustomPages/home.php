@@ -4,10 +4,12 @@
         <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
         <div class="home__hero__content container-hero text-center">
             <div class="home__hero__img mb-44">
-                <img src="<?= $this->Frontend->image($images['logo']['path']); ?>" alt="<?= $images['logo']['title'] ?>">
+                <?php if($images['logo']): ?>
+                    <img src="<?= $this->Frontend->image($images['logo']['path']); ?>" alt="<?= $images['logo']['title'] ?>">
+                <?php endif; ?>
             </div>
-            <h1 class="font-96"><?= $item->string_1 ?></h1>
-            <h4 class="font-20 fw-light font-secondary"><?= $item->string_2 ?></h4>
+            <h1 class="font-96"><?= $item->string_1 ?? '' ?></h1>
+            <h4 class="font-20 fw-light font-secondary"><?= $item->string_2 ?? '' ?></h4>
         </div>
         <div class="font-20 fw-book font-secondary home__hero__scroll text-center">
             Scroll <?= $this->Frontend->svg('icons/arrow-down.svg') ?>
@@ -54,14 +56,18 @@
     <div class="swiper swiper--loop">
         <div class="swiper-wrapper">
             <?php foreach ($images['gallery-2'] as $img) { ?>
-                <div class="swiper-slide">
-                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
-                </div>
+                <?php if($img['path']): ?>
+                    <div class="swiper-slide">
+                        <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+                    </div>
+                <?php endif; ?>
             <?php } ?>
             <?php foreach ($images['gallery-2'] as $img) { ?>
-                <div class="swiper-slide">
-                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
-                </div>
+                <?php if($img['path']): ?>
+                    <div class="swiper-slide">
+                        <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+                    </div>
+                <?php endif; ?>
             <?php } ?>
         </div>
     </div>

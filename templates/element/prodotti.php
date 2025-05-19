@@ -6,9 +6,9 @@
 ?>
 
 <div class="prodotti text-center container-prodotti m-auto">
-    <div class="font-64 <?= $description ? 'mb-134' : '' ?>">
+    <div class="font-64 <?= isset($description) && $description ? 'mb-134' : '' ?>">
         <h1 class="m-auto <?= $titleClass ?? '' ?> ">
-            <?= $title ?>
+            <?= $title ?? '' ?>
         </h1>
         <?php if(isset($description)) { ?>
             <?= $description ?>
@@ -18,7 +18,9 @@
         <?php foreach ($products as $product) { ?>
             <div class="prodotti__item">
                 <div class="prodotti__img">
-                    <img src="<?= $this->Frontend->resize($product->preview->path, 414 * 2); ?>" alt="<?= $product->title ?>">
+                    <?php if($product->preview->path): ?>
+                        <img src="<?= $this->Frontend->resize($product->preview->path, 414 * 2); ?>" alt="<?= $product->title ?>">
+                    <?php endif; ?>
                 </div>
                 <?= $this->element('cta', [
                     'label' => $product->title
