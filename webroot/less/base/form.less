@@ -6,12 +6,12 @@ button {
     webkit-appearance: none;
     appearance: none;
     background: none;
-    font: inherit;
     box-shadow: none;
     border-radius: 0;
     width: 100%;
     padding: 0;
     outline: none;
+    .font-secondary;
 }
 
 // Rimuovo stili autocomplete
@@ -45,12 +45,10 @@ textarea,
 select {
     height: 55px;
     line-height: 55px;
-    border: 1px solid @input-border-color;
-    padding: 0 15px;
+    border-bottom: 1px solid @white;
     font-size: 16px;
     transition: 300ms;
-    background: @input-bg-color;
-    color: @text-color;
+    color: @white;
     &:focus {
         border-color: lighten(@input-border-color, 30%);
     }
@@ -64,20 +62,21 @@ select {
 
 textarea {
     line-height: 1.2em;
-    padding: 25px 15px;
+    padding: 25px 0;
     height: auto;
 }
 
 label {
     display: block;
     margin-bottom: 3px;
-    font-size: 14px;
+    text-transform: uppercase;
+    .font-secondary;
 }
 
 // Normalizing number input
 
 .input {
-    margin-bottom: 25px;
+    margin-bottom: 2.1em;
     
     &.text:not(.text-date),
     &.textarea,
@@ -91,15 +90,16 @@ label {
         }
         
         label {
+            .fw-medium;
+            .font-18;
             margin: 0;
-            padding: 0 15px;
             position: absolute;
             top: 50%;
             left: 0;
             right: 0;
             transition: 300ms @easeOutQuad;
-            transform: translate3d(0, -50%, 0) translate3d(0, -18px, 0);
-            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -18px, 0);
+            transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0);
+            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0);
             font-size: 12px;
             opacity: 0.5;
         }
@@ -114,8 +114,8 @@ label {
         
         input:focus + label,
         textarea:focus + label {
-            transform: translate3d(0, -50%, 0) translate3d(0, -18px, 0);
-            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -18px, 0);
+            transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0);
+            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0);
             font-size: 12px;
             opacity: 0.5;
         }
@@ -149,6 +149,7 @@ label {
             height: 0;
             transform: scale(0);
             -webkit-transform: scale(0);
+            background: rgba(217, 217, 217, 0.15);
             position: absolute;
             top: 0;
             left: -10px;
@@ -168,7 +169,7 @@ label {
                 width: 20px;
                 height: 20px;
                 display: block;
-                border: 1px solid @input-border-color;
+                border: 1px solid @white;
                 flex-shrink: 0;
             }
         }

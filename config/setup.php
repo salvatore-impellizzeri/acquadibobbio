@@ -1,7 +1,7 @@
 <?php
 	return [
 		'Setup' => [
-			'domain' => 'http://crispy.webmotion.it',
+			'domain' => 'http://dev.webmotion.it',
 			'sitename' => 'Crispy',
 			'mailto' => 'webmaster@webmotion.it', //si gestisce da pannello, da usare solo con la vecchia form.
 			'mailfrom' => 'sitoweb@webmotion.it',

@@ -5,7 +5,7 @@
             <label>azienda</label>
             <?= $this->element('snippet', ['id' => 1])?>
         </div>
-        <div>
+        <div class="footer__info__contacts">
             <label>contatti</label>
             <?= $this->element('snippet', ['id' => 15])?>
         </div>

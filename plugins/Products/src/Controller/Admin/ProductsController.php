@@ -16,11 +16,11 @@ class ProductsController extends AppController
 
         if (in_array($this->request->getParam('action'), ['add', 'edit', 'index'])) {
 
-            $productCategories = $this->Products->ProductCategories->find('threaded')
-                ->order(['ProductCategories.lft' => 'ASC']);
+            // $productCategories = $this->Products->ProductCategories->find('threaded')
+            //     ->order(['ProductCategories.lft' => 'ASC']);
 
-            $productCategories = $this->Products->ProductCategories->formatTreeList($productCategories, spacer: '- ')->toArray();
-			$this->set('productCategories', $productCategories);
+            // $productCategories = $this->Products->ProductCategories->formatTreeList($productCategories, spacer: '- ')->toArray();
+			// $this->set('productCategories', $productCategories);
 
         }
     }
@@ -30,14 +30,6 @@ class ProductsController extends AppController
 	public function get()
     {
 		$this->queryOrder = ['Products.position' => 'ASC'];
-		$this->queryContain = [
-			'ProductCategories' => [
-				'fields' => [
-					'id',
-					'title'
-				]
-			]
-		];
 		parent::get();
 	}
 

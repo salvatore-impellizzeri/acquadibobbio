@@ -16,7 +16,7 @@
     </div>
     <div class="prodotti__cols">
         <?php foreach ($products as $product) { ?>
-            <div class="prodotti__item">
+            <a href="<?= $this->Frontend->url('/products/view/' . $product->id); ?>" class="prodotti__item">
                 <div class="prodotti__img">
                     <?php if($product->preview->path): ?>
                         <img src="<?= $this->Frontend->resize($product->preview->path, 414 * 2); ?>" alt="<?= $product->title ?>">
@@ -25,7 +25,7 @@
                 <?= $this->element('cta', [
                     'label' => $product->title
                 ]) ?>
-            </div>
+            </a>
         <?php } ?>
     </div>
 </div>
