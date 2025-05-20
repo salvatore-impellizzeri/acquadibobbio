@@ -7,12 +7,11 @@
 
 <div class="prodotti text-center container-prodotti m-auto">
     <div class="font-64 <?= isset($description) && $description ? 'mb-134' : '' ?>">
-        <h1 class="m-auto <?= $titleClass ?? '' ?> ">
-            <?= $title ?? '' ?>
-        </h1>
-        <?php if(isset($description)) { ?>
-            <?= $description ?>
-        <?php } ?>
+       <?= $this->element('title', [
+        'title' => $title,
+        'text' => $text,
+        'extraClass' => $extraClass
+       ]); ?>
     </div>
     <div class="prodotti__cols">
         <?php foreach ($products as $product) { ?>

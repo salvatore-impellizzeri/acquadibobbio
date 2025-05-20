@@ -20,7 +20,11 @@
             top: clamp(20px, 97vw * @px2vw, 97px);
             left: 51%;
             transform: translateX(-50%);
-            width: clamp(100px, 445vw * @px2vw, 445px);
+            width: clamp(150px, 445vw * @px2vw, 445px);
+
+            @media screen and (max-width: @mobile-l) {
+                left: 65%;
+            }
         }
 
         & :nth-child(3){
@@ -42,7 +46,7 @@
             bottom: 0;
             left: 0;
             transform: translateX(-2.5em);
-            width: clamp(150px, 547vw * @px2vw, 547px);
+            width: clamp(200px, 547vw * @px2vw, 547px);
         }
 
         & :nth-child(2){
@@ -59,7 +63,7 @@
             top: 0;
             right: 0;
             transform: translateX(2.5em);
-            width: clamp(150px, 547vw * @px2vw, 547px);
+            width: clamp(200px, 547vw * @px2vw, 547px);
             height: clamp(210px, 735vw * @px2vw, 735px);
         }
     }
