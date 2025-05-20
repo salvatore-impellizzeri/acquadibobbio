@@ -1,7 +1,7 @@
 .hamburger{
     display: block;
-    width: 97px;
-    height: 97px;
+    width: clamp(30px, 97vw + @px2vw, 97px);
+    height: clamp(30px, 97vw + @px2vw, 97px);
     background-color: @black;
     border-radius: 1000px;
     position: relative;

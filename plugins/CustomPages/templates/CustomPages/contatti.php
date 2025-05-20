@@ -1,12 +1,22 @@
-<div class="contacts pt-h">
+<?php 
+    $this->assign('footerClass', 'footer--contacts');
+?>
+
+<div class="contacts">
     <video src="img/video/ADB_Contatti.mp4" autoplay muted loop playsinline></video>
     <div class="container-text m-auto">
-        <div class="contacts__info text-center uppercase">
-            <h1 class="font-96"><?= $item->string_1 ?? '' ?></h1>
+        <div class="contacts__info">
+            <h1><?= $item->string_1 ?? '' ?></h1>
             <div class="contacts__info__text">
-                <?= $item->text_1; ?>
-                <?= $this->element('snippet', ['id' => 15])?>
-                <?= $this->element('snippet', ['id' => 1])?>
+                <div class="contacts__info__text-1">
+                    <?= $item->text_1; ?>
+                </div>
+                <div class="contacts__info__text-2">
+                    <?= $this->element('snippet', ['id' => 15])?>
+                </div>
+                <div class="contacts__info__text-3">
+                    <?= $this->element('snippet', ['id' => 1])?>
+                </div>
             </div>
         </div>
         <div class="contacts__form">

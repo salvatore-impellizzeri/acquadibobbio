@@ -1,12 +1,11 @@
-<footer class="footer">
-
+<footer class="footer <?= $extraClass ?? '' ?>">
     <div class="footer__info">
         <div class="footer__info__agency">
-            <label>azienda</label>
+            <div>azienda</div>
             <?= $this->element('snippet', ['id' => 1])?>
         </div>
         <div class="footer__info__contacts">
-            <label>contatti</label>
+            <div>contatti</div>
             <?= $this->element('snippet', ['id' => 15])?>
         </div>
     </div>

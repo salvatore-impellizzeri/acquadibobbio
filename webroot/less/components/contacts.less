@@ -1,9 +1,11 @@
 .contacts{
+    .pt-h;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5vw;
     position: relative;
     color: @white;
+    flex-grow: 1;
 
     video{
         position: absolute;
@@ -15,7 +17,12 @@
     }
     
     &__info{
+        .fw-light;
+        .text-center;
+        .uppercase;
+
         h1{
+            .font-96;
             margin-bottom: 0.37em;
         }
 
@@ -29,6 +36,18 @@
                 .font-20;
                 .letterSpacing(7%);
                 margin-bottom: 0.6em;
+            }
+        }
+
+        &__text-2{
+            p {
+                .fw-book;
+            }
+        }
+
+        &__text-3{
+            p {
+                .font-16;
             }
         }
     }
