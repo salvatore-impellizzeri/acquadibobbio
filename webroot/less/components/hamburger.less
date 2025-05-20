@@ -18,14 +18,11 @@
         top: 0;
         right: 0;
         background-color: @black;
-        transition: 0.5s ease-in-out, background-color 0.3s ease-in-out;
+        transition: 0.6s ease-in-out, background-color 0.3s ease-in-out;
     }
 
     &.open::before {
-        top: clamp(-23px, -23vw * @px2vw, -11px);
-        right: clamp(-39px, -39vw * @px2vw, -10px);
-        transform: scale(50);
-        border-radius: 0;
+        transform: scale(100);
         background-color: #1A1A1A;
     }
 
