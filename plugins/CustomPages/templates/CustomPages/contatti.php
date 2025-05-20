@@ -12,10 +12,17 @@
                     <?= $item->text_1; ?>
                 </div>
                 <div class="contacts__info__text-2">
-                    <?= $this->element('snippet', ['id' => 15])?>
+                    <div>
+                        <?= $this->Frontend->svg('icons/phone.svg'); ?>
+                        <?= $this->element('snippet', ['id' => 15])?>
+                    </div>
+                    <div>
+                        <?= $this->Frontend->svg('icons/mail.svg'); ?>
+                        <?= $this->element('snippet', ['id' => 17])?>
+                    </div>
                 </div>
                 <div class="contacts__info__text-3">
-                    <?= $this->element('snippet', ['id' => 1])?>
+                    <?= $this->element('snippet', ['id' => 1])?> <?= date("Y") ?>
                 </div>
             </div>
         </div>

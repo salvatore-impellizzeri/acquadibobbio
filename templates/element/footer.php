@@ -2,7 +2,7 @@
     <div class="footer__info">
         <div class="footer__info__agency">
             <span>azienda</span>
-            <?= $this->element('snippet', ['id' => 1])?>
+            <span><?= $this->element('snippet', ['id' => 1])?> <?= date("Y") ?></span>
         </div>
         <div class="footer__info__contacts">
             <span>contatti</span>
