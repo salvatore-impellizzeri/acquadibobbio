@@ -35,7 +35,7 @@
     ?>
 
     <?php if (!empty($images['gallery_2'])): ?>
-        <div class="product__gallery container-m m-auto mb-224">
+        <div class="product__gallery">
             <?php echo $this->element('gallery', [
                 'images' => $images['gallery_2'],
                 'elements' => $elements

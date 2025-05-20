@@ -316,7 +316,12 @@ const swiperMethods = new Swiper('.swiper--loop', {
 // CURSOR
 
 document.addEventListener('DOMContentLoaded', () => {
+    const isTouch = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+
+    if (isTouch) return; 
+
     const cursor = document.querySelector('[data-cursor-follow]');
+    if (!cursor) return;
 
     document.addEventListener('mousemove', (e) => {
         cursor.style.left = `${e.clientX}px`;

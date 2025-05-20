@@ -3,7 +3,7 @@
         <?php foreach (array_values($images) as $i => $img): ?>
             <div class="gallery__element">
                 <?php $element = $elements[$i]; ?>
-                <div data-fancybox="gallery" class="gallery__img">
+                <div class="gallery__img">
                     <img src="<?= $this->Frontend->image($img->path) ?>" alt="<?= $img->title ?>">
                     <h1 class="font-128"><?= $element['name'] ?? '' ?></h1>
                 </div>
