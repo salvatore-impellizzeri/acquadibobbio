@@ -6,10 +6,10 @@
 ?>
 
 <div class="prodotti text-center container-prodotti m-auto">
-    <div class="font-64 <?= isset($description) && $description ? 'mb-134' : '' ?>">
+    <div class="font-64 <?= isset($text) && $text ? 'mb-134' : '' ?>">
        <?= $this->element('title', [
         'title' => $title,
-        'text' => $text,
+        'text' => $text ?? null,
         'extraClass' => $extraClass
        ]); ?>
     </div>

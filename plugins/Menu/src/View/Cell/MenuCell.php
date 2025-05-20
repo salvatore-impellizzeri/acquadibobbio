@@ -21,5 +21,9 @@ class MenuCell extends Cell
         $this->set(compact('options'));
     }
 
+    public function social($menuId){
+        $this->display($menuId);
+    }
+
 }
 ?>

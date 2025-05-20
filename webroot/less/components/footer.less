@@ -1,5 +1,6 @@
 .footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     .font-15;
     padding: clamp(30px, 165vw * @px2vw, 165px) clamp(10px, 128vw * @px2vw, 128px) clamp(130px, 241vw * @px2vw, 241px);
@@ -8,6 +9,13 @@
     position: relative;
     overflow: hidden;
 
+    @media screen and (max-width: @tablet-l) {
+        gap: 0;
+    }
+
+    @media screen and (max-width: @tablet-m) {
+        display: block;
+    }
 
     // @media screen and (max-width: @tablet-l) {
     //     flex-direction: column;
@@ -26,9 +34,24 @@
         grid-template-columns: 1fr 1fr;
         gap: clamp(20px, 174vw * @px2vw, 174px);
 
+        @media screen and (max-width: @tablet-l) {
+            gap: 0;
+        }
+
+        @media screen and (max-width: @tablet-m) {
+            margin-bottom: 100px;
+            text-align: center;
+            justify-items: center;
+        }
+
+        @media screen and (max-width: @mobile-l) {
+            grid-template-columns: 1fr;
+            gap: 30px
+        }
+
         &__agency,
         &__contacts{
-            width: clamp(100px, 240vw * @px2vw, 240px);
+            width: clamp(200px, 240vw * @px2vw, 240px);
 
             span{
                 display: block;
@@ -48,28 +71,41 @@
             text-transform: uppercase;
             margin-bottom: 0.3em;
         }
-
-        p{
-            font-weight: 400;
-        }
     }
 
     &__social{
-        margin-left: auto;
-
+        display: flex;
+        gap: 6.69px;
         // @media screen and (max-width: @tablet-l) {
         //     margin-left: 0;
         // }
     }
 
     &__legal{
-        display: flex;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
         text-transform: uppercase;
-        opacity: 50%;
-        justify-content: center;
-        gap: 10px;
+        justify-items: end;
+        row-gap: clamp(15px, 22.69vw * @px2vw, 22.69px);
         color: black;
         margin-left: auto;
+
+        @media screen and (max-width: @tablet-m) {
+            margin: auto;
+            justify-items: center;
+        }
+
+        svg{
+            width: 29px;
+            height: 29px;
+        }
+        
+        .menu{
+            opacity: 50%;
+            display: flex;
+            align-items: center;
+        }
     }
 
     .menu{
@@ -110,6 +146,14 @@
             color: @white;
             .text-center;
             margin: auto;
+            justify-items: center;
+
+            svg{
+                path{
+                    fill: @white;
+                    opacity: 50%;
+                }
+            }
         }
 
         .footer__bottom{
