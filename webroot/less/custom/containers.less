@@ -11,7 +11,7 @@
 }
 
 .container-prodotti{
-    width: clamp(350px, 1364vw * @px2vw, 1364px);
+    width: clamp(500px, 1364vw * @px2vw, 1364px);
 }
 
 .container-title{
@@ -28,4 +28,16 @@
 
 .container-hero{
     width: clamp(350px, 1076vw * @px2vw, 1076px);
+
+    @media screen and (max-width: @tablet-m){
+        width: 70%;
+    }
+
+    @media screen and (max-width: @tablet-s){
+        width: 80%;
+    }
+
+    @media screen and (max-width: @mobile-l){
+        width: 95%;
+    }
 }

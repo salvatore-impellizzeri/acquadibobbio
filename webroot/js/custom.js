@@ -298,10 +298,19 @@ const swiperMethods = new Swiper('.swiper--loop', {
 		disableOnInteraction: false,
 	},
 	loop: true,
-	slidesPerView: 4,
+	slidesPerView: 2.3,
 	allowTouchMove: false,
 	loopAdditionalSlides: 3,
 	touchMoveStopPropagation: false,
+	breakpoints: {
+		800: {
+			slidesPerView: 4,
+		},
+
+		500: {
+			slidesPerView: 3.5,
+		}
+	}
 });
 
 // CURSOR

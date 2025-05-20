@@ -27,7 +27,7 @@
         <?= $this->element('info', [
             'title' => $item->string_4,
             'text' => $item->text_1,
-            'label' => $item->string_6, 
+            'label' => $item->string_5, 
             'url' => '#'
         ]) ?>
     </div>
@@ -43,12 +43,12 @@
     <?= $this->element('img-text', [
         'img' => $images['image-3']['path'],
         'alt' => $images['image-3']['title'],
-        'title' => $item->string_5,
+        'title' => $item->string_6,
         'text' => $item->text_3,
-        'cta' => $item->string_6,
+        'cta' => $item->string_7,
         'url' => '#',
-        'word_1' => $item->string_7,
-        'word_2' => $item->string_8,
+        'word_1' => $item->string_8,
+        'word_2' => $item->string_9,
         'extraClass' => 'mb-175'
     ]) ?>
 

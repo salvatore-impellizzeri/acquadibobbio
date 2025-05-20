@@ -1,8 +1,25 @@
 .prodotti{
+
+    @media screen and (max-width: @tablet-m) {
+        width: fit-content;
+    }
+    
     &__cols{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: clamp(20px, 61vw * @px2vw, 61px);
+
+        @media screen and (max-width: @tablet-s) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: @mobile-l) {
+            grid-template-columns: 1fr;
+        }
+
+        & > * {
+            .m-auto;
+        }
     }
 
     h1{
@@ -20,7 +37,7 @@
     &__img{
         width: clamp(200px, 414vw * @px2vw, 414px);
         height: clamp(240px, 494vw * @px2vw, 494px);
-        margin-bottom: 2.1rem;
+        margin-bottom: clamp(10px, 38vw * @px2vw, 38px);
 
         img{
             width: 100%;

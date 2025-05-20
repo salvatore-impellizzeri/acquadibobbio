@@ -40,7 +40,7 @@ $this->extend('/Admin/Common/edit');
                     </legend>
                     <?php echo $this->Form->control('string_4', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
                     <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-10']); ?>
-                    <?php echo $this->Form->inlineEditor('string_6', ['label' => 'Bottone', 'class' => 'span-10']); ?> 
+                    <?php echo $this->Form->inlineEditor('string_5', ['label' => 'Bottone', 'class' => 'span-10']); ?> 
                 </fieldset>
 
                 <fieldset class="input-group">
@@ -55,12 +55,12 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Seconda immagine statica
                     </legend>
-                    <?php echo $this->Form->control('string_5', ['label' => 'Titolo', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->control('string_6', ['label' => 'Titolo', 'extraClass' => 'span-12']); ?>
                     <?php echo $this->Form->editor('text_3', ['label' => 'Testo', 'class' => 'span-10']); ?> 
-                    <?php echo $this->Form->control('string_6', ['label' => 'Bottone', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->control('string_7', ['label' => 'Bottone', 'extraClass' => 'span-12']); ?>
                     <?php echo $this->element('admin/uploader/image', ['scope' => 'image-3', 'title' => 'Immagine', 'width' => 1076,  'mobile' => ['width' => 480, 'height' => 890]]); ?>
-                    <?php echo $this->Form->control('string_7', ['label' => 'Primo testo Immagine', 'extraClass' => 'span-12']); ?>
-                    <?php echo $this->Form->control('string_8', ['label' => 'Secondo testo Immagine', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->control('string_8', ['label' => 'Primo testo Immagine', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->control('string_9', ['label' => 'Secondo testo Immagine', 'extraClass' => 'span-12']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">

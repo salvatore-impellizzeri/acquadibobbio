@@ -3,10 +3,11 @@
         <?= $title ?>
     </h2>
     <?= $text ?>
-    <?php if(isset($cta)): ?>
+    <?php if(isset($label)): ?>
         <?= $this->element('cta', [
             'label' => $label,
-            'url' => $url
+            'url' => $url,
+            'extraClass' => 'mt-40'
         ]); ?>
     <?php endif; ?>
 </div>
