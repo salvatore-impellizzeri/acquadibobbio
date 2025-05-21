@@ -65,10 +65,8 @@
         position: relative;
         width: clamp(350px, 1576vw * @px2vw, 1576px);
 
-        @media (pointer: coarse) {
-            &__images {
-                display: none;
-            }
+        @media screen and (max-width: @xl) {
+            width: 100%;
         }
 
         &:hover{
@@ -99,6 +97,27 @@
             width: clamp(300px, 418vw * @px2vw, 418px);
             transition: 0.5s ease-in-out;
         }
+
+        @media screen and (max-width: 1080px) {
+            height: fit-content;
+
+            &__images{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                margin: auto;
+
+                img:first-of-type, img:nth-of-type(2){
+                    opacity: 1;
+                    position: relative;
+                    width: 50%;
+                    object-fit: cover;
+                    margin-bottom: 20px;
+                    margin-top: 30px;
+                }
+            }
+        }
+
     }
 
     .swiper-wrapper{
