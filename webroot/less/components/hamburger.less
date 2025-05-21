@@ -28,6 +28,22 @@
 
     &.open{
         background-color: #1A1A1A;
+
+        span {
+            &:first-child {
+                transform: translate(-50%, -50%) rotate(45deg);
+                -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform: translate(-50%, -50%) rotate(-45deg);
+                -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
     }
 
     span{
