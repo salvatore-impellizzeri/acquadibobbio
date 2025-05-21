@@ -1,9 +1,9 @@
-<div class="bg-black">
-    <footer class="footer <?= $extraClass ?? '' ?> fadeFromBottom" data-animated>
+<div class="<?= $extraClass ?? '' ?>">
+    <footer class="footer fadeFromBottom" data-animated>
         <div class="footer__info">
             <div class="footer__info__agency">
                 <span>azienda</span>
-                <div class="copyright"><?= $this->element('snippet', ['id' => 1])?> <?= date("Y") ?></div> 
+                <div class="copyright"><?= $this->element('snippet', ['id' => 1])?> <span><?= date("Y") ?></span></div> 
                 <div><?= $this->element('snippet', ['id' => 18])?></div>
             </div>
             <div class="footer__info__contacts">

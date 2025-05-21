@@ -3,7 +3,7 @@
     grid-template-columns: 2fr 1fr;
     align-items: center;
     .font-15;
-    padding: clamp(30px, 165vw * @px2vw, 165px) clamp(10px, 128vw * @px2vw, 128px) clamp(130px, 241vw * @px2vw, 241px);
+    padding: clamp(80px, 165vw * @px2vw, 165px) clamp(10px, 128vw * @px2vw, 128px) clamp(130px, 241vw * @px2vw, 241px);
     .font-secondary;
     gap: clamp(10px, 90vw * @px2vw, 90px);
     position: relative;
@@ -140,6 +140,17 @@
     &--contacts{
         background-color: @black;
         display: block;
+        position: relative;
+
+        &::before{
+            background-color: @black;
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
         .footer__info__agency,
         .footer__info__contacts{
@@ -168,8 +179,16 @@
 
     .copyright{
         display: flex;
-        align-items: center;
+        align-items: end;
         gap: 3px;
         margin: 0;
+
+        span{
+            margin-bottom: 2px;
+        }
+
+        @media screen and (max-width: @tablet-m) {
+            justify-content: center;
+        }
     }
 }

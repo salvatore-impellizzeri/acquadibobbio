@@ -32,14 +32,16 @@
             'label' => $item->string_5, 
             'url' => '#',
         ]) ?>
-        <?php
-            if(!empty($images['gallery-1'])) {
-                foreach ($images['gallery-1'] as $img) { ?>
-                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
-        <?php 
-                }
-            } 
-        ?>
+        <div class="home__new-product__images">
+            <?php
+                if(!empty($images['gallery-1'])) {
+                    foreach ($images['gallery-1'] as $img) { ?>
+                        <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+            <?php 
+                    }
+                } 
+            ?>
+        </div>
     </div>
 
     <!-- BIG IMG -->

@@ -65,6 +65,12 @@
         position: relative;
         width: clamp(350px, 1576vw * @px2vw, 1576px);
 
+        @media (pointer: coarse) {
+            &__images {
+                display: none;
+            }
+        }
+
         &:hover{
             .info{
                 transform: translateY(-10px);
@@ -75,8 +81,6 @@
                 opacity: 1;
             }
         }
-
-
 
         img:first-of-type{
             opacity: 0;
