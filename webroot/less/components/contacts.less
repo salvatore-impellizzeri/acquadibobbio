@@ -29,20 +29,25 @@
         margin-bottom: clamp(50px, 167vw * @px2vw, 167px);
 
         &__text{
-    
-            p{
-                .font-secondary;
-                .fw-light;
-                .font-20;
-                .letterSpacing(7%);
-                margin-bottom: 0.6em;
-            }
+            .font-secondary;
+            .fw-light;
+            .font-20;
+            .letterSpacing(7%);
+            margin-bottom: 0.6em;
         }
 
         &__text-2{
             display: flex;
             justify-content: center;
             gap: 16px;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: @mobile-l) {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 15px;
+                gap: 8px;
+            }
 
             & > * {
                 display: flex;
@@ -51,7 +56,6 @@
             }
 
             p {
-                margin-bottom: 0;
                 .fw-book;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.5);
             }
@@ -72,5 +76,35 @@
 
     &__form{
         padding-bottom: 3.05em;
+    }
+
+    .checkbox{
+        label{
+            span{
+                align-items: center;
+            }
+        }
+    }
+
+    .button{
+        position: relative;
+        margin-left: 17px;
+        
+        span{
+            .uppercase;
+        }
+
+        &::before{
+            content: '';
+            background-image: url('../../img/icons/arrow-right.svg');
+            background-repeat: no-repeat;
+            .font-48;
+            position: absolute;
+            height: 100%;
+            width: 20%;
+            transform: translate(-120%);
+            left: 0;
+            top: 0;
+        }
     }
 }
