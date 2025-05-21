@@ -25,7 +25,7 @@
                         echo $this->element('admin/uploader/image', [
                             'scope' => 'preview',
                             'title' => __d('admin', 'preview'),
-                            'width' => 720 * 1.5,
+                            'width' => 1654 * 2,
                         ]);
                         
                         echo $this->Form->editor('description', ['label' => 'Descrizione']);

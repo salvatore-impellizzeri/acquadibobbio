@@ -2,6 +2,7 @@
     <?= $this->element('prodotti', [
         'title' => $item->string_1,
         'text' => $item->text_1,
-        'extraClass' => 'mb-80'
+        'extraClass' => 'mb-80',
+        'titleClass' => 'fadeFromBottom',
     ]) ?>
 </div>

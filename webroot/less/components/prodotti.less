@@ -1,4 +1,7 @@
 .prodotti{
+    .text-center;
+    .container-prodotti;
+    .m-auto;
 
     @media screen and (max-width: @tablet-m) {
         width: fit-content;
@@ -22,6 +25,19 @@
         }
     }
 
+    &__item{
+
+        &:hover{
+            img{
+                transform: scale(1.05);
+            }
+
+            .cta{
+                transform: translateY(-7px);
+            }
+        }
+    }
+
     h1{
         width: clamp(200px, 585vw * @px2vw, 585px);
     }
@@ -38,10 +54,14 @@
         width: clamp(200px, 414vw * @px2vw, 414px);
         height: clamp(240px, 494vw * @px2vw, 494px);
         margin-bottom: clamp(10px, 38vw * @px2vw, 38px);
+        overflow: hidden;
 
         img{
             width: 100%;
             object-fit: cover;
+            transition: 0.3s ease-in-out;
         }
     }
+
+    
 }

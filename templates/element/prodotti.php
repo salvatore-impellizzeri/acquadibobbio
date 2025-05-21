@@ -5,15 +5,16 @@
     ->all();
 ?>
 
-<div class="prodotti text-center container-prodotti m-auto">
+<div class="prodotti <?= $extraClass ?? "" ?>">
     <div class="font-64 <?= isset($text) && $text ? 'mb-134' : '' ?>">
        <?= $this->element('title', [
         'title' => $title,
         'text' => $text ?? null,
-        'extraClass' => $extraClass
+        'extraClass' => $titleClass ?? null,
+        'textAnimationm' => $textAnimation ?? null,
        ]); ?>
     </div>
-    <div class="prodotti__cols">
+    <div class="prodotti__cols <?= $productsAnimation ?? '' ?>" data-animated>
         <?php foreach ($products as $product) { ?>
             <a href="<?= $this->Frontend->url('/products/view/' . $product->id); ?>" class="prodotti__item">
                 <div class="prodotti__img">

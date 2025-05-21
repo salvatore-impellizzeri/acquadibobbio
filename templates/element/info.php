@@ -1,4 +1,4 @@
-<div class="info container-text m-auto text-center <?= $extraClass ?? '' ?>">
+<div class="info <?= $extraClass ?? '' ?>">
     <h2 class="font-64">
         <?= $title ?>
     </h2>

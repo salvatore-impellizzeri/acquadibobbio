@@ -41,6 +41,7 @@ $this->extend('/Admin/Common/edit');
                     <?php echo $this->Form->control('string_4', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
                     <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-10']); ?>
                     <?php echo $this->Form->inlineEditor('string_5', ['label' => 'Bottone', 'class' => 'span-10']); ?> 
+                    <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery-1', 'title' => 'Immagini nuovo prodotto']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">

@@ -2,16 +2,16 @@
     <!-- HERO -->
     <div class="home__hero">
         <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
-        <div class="home__hero__content container-hero text-center">
-            <div class="home__hero__img mb-44">
+        <div class="home__hero__content container-hero text-center zoomIn" data-animated>
+            <div class="home__hero__img mb-44 opacityDelay-1" data-animated>
                 <?php if($images['logo']): ?>
                     <img src="<?= $this->Frontend->image($images['logo']['path']); ?>" alt="<?= $images['logo']['title'] ?>">
                 <?php endif; ?>
             </div>
-            <h1 class="font-96"><?= $item->string_1 ?? '' ?></h1>
-            <h4 class="font-20 fw-light font-secondary"><?= $item->string_2 ?? '' ?></h4>
+            <h1 class="font-96 opacityDelay-1" data-animated><?= $item->string_1 ?? '' ?></h1>
+            <h4 class="font-20 fw-light font-secondary opacityDelay-1" data-animated><?= $item->string_2 ?? '' ?></h4>
         </div>
-        <div class="font-20 fw-book font-secondary home__hero__scroll text-center">
+        <div class="font-20 fw-book font-secondary home__hero__scroll text-center fadeFromTopDelay-1" data-animated>
             Scroll <?= $this->Frontend->svg('icons/arrow-down.svg') ?>
         </div>
     </div>
@@ -19,7 +19,9 @@
     <!-- PRODOTTI -->
     <?= $this->element('prodotti', [
         'title' => $item->string_3,
-        'extraClass' => 'font-64 mb-134 pt-h'
+        'titleClass' => 'font-64 mb-134 pt-h fadeFromLeft',
+        'productsAnimation' => 'fadeFromRight',
+        'extraClass' => 'mb-214'
     ]) ?>
 
     <!-- NEW PRODUCT -->
@@ -28,8 +30,16 @@
             'title' => $item->string_4,
             'text' => $item->text_1,
             'label' => $item->string_5, 
-            'url' => '#'
+            'url' => '#',
         ]) ?>
+        <?php
+            if(!empty($images['gallery-1'])) {
+                foreach ($images['gallery-1'] as $img) { ?>
+                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+        <?php 
+                }
+            } 
+        ?>
     </div>
 
     <!-- BIG IMG -->

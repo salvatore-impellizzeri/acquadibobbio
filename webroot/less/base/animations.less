@@ -86,3 +86,288 @@
 .page-text-fancyimages--left > .page-text-fancyimages__content.is-in {
   animation: slideLeft 1.1s @easeOutSine forwards;
 }
+
+
+// CUSTOM 
+
+@keyframes fadeFromLeft {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
+.fadeFromLeft{
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.fadeFromLeft.is-in{
+  animation: fadeFromLeft 1s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromRight {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
+.fadeFromRight{
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.fadeFromRight.is-in{
+  animation: fadeFromRight 1s ease-in-out forwards;
+}
+
+
+
+@keyframes zoomIn {
+  0% {
+      transform: scale(0.95);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.zoomIn{
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.zoomIn.is-in{
+  animation: zoomIn 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes opacityDelay-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.opacityDelay-1{
+  opacity: 0;
+}
+
+.opacityDelay-1.is-in{
+  animation: opacityDelay-1 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.opacity{
+  opacity: 0;
+}
+
+.opacity.is-in{
+  animation: opacity 0.5s ease-in-out forwards;
+}
+
+
+
+
+@keyframes bigImg {
+  0% {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+.bigImg{
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.bigImg.is-in{
+  animation: bigImg 1s ease-in-out forwards;
+  animation-delay: 1.8s;
+}
+
+
+
+@keyframes imgWidth {
+  0% {
+    transform: scaleX(0.9);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.imgWidth.is-in{
+  animation: imgWidth 1s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromTopDelay-1 {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.fadeFromTopDelay-1{
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.fadeFromTopDelay-1.is-in{
+  animation: fadeFromTopDelay-1 0.8s ease-in-out forwards;
+  animation-delay: 1.8s;
+}
+
+
+
+@keyframes fadeFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.fadeFromTop{
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.fadeFromTop.is-in{
+  animation: fadeFromTop 0.8s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.fadeFromBottom{
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.fadeFromBottom.is-in{
+  animation: fadeFromBottom 0.8s ease-in-out forwards;
+}
+
+
+
+@keyframes imgWidthProduct {
+  0% {
+    width: clamp(300px, 750vw * @px2vw, 750px);
+  }
+  100% {
+    width: clamp(350px, 1654vw * @px2vw, 1654px);
+  }
+}
+
+.imgWidthProduct.is-in{
+  animation: imgWidthProduct 1s ease-in-out forwards;
+}
+
+
+
+
+@keyframes elementAnimation-0 {
+  0% {
+    margin-top: clamp(7px, 23vw * @px2vw, 23px);
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.elementAnimation-0{
+  margin-top: clamp(15px, 23vw * @px2vw, 23px);
+}
+
+.elementAnimation-0.is-in{
+  animation: elementAnimation-0 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes elementAnimation-1 {
+  0% {
+    margin-top: clamp(15px, 46vw * @px2vw, 46px);
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.elementAnimation-1{
+  margin-top: clamp(15px, 46vw * @px2vw, 46px);
+}
+
+.elementAnimation-1.is-in{
+  animation: elementAnimation-1 0.5s ease-in-out forwards;
+}
+
+
+@keyframes elementAnimation-2 {
+  0% {
+    margin-top: clamp(30px, 92vw * @px2vw, 92px);
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.elementAnimation-2{
+  margin-top: clamp(30px, 92vw * @px2vw, 92px);
+}
+
+.elementAnimation-2.is-in{
+  animation: elementAnimation-2 0.5s ease-in-out forwards;
+}

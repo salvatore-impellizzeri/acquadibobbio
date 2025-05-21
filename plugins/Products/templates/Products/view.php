@@ -6,7 +6,7 @@
         <div class="font-secondary fw-light font-20"><?= $item->subname ?? ''?></div>
     </div>
     <?php if (!empty($images['preview'])): ?>
-        <div class="product__preview m-auto mb-251">
+        <div class="product__preview m-auto mb-251 imgWidthProduct" data-animated>
             <img src="<?= $this->Frontend->image($images['preview']->path) ?>" alt="<?= h($images['preview']->title) ?>">
         </div>
     <?php endif; ?>

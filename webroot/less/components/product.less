@@ -10,9 +10,14 @@
     
     &__preview{
         width: clamp(300px, 750vw * @px2vw, 750px);
+        height: clamp(150px, 984vw * @px2vw, 984px);
+        overflow: hidden;
 
         img{
             filter: brightness(60%);
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
     }
 
