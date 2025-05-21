@@ -4,5 +4,6 @@
         'text' => $item->text_1,
         'extraClass' => 'mb-80',
         'titleClass' => 'fadeFromBottom',
+        'productsAnimation' => 'fadeFromRight'
     ]) ?>
 </div>
