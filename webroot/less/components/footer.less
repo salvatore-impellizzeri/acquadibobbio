@@ -53,6 +53,10 @@
         &__contacts{
             width: clamp(200px, 240vw * @px2vw, 240px);
 
+            div > * {
+                opacity: 80%;
+            }
+
             span{
                 display: block;
                 .fw-medium;
@@ -160,5 +164,12 @@
         .footer__bottom{
             color: @white;
         }
+    }
+
+    .copyright{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin: 0;
     }
 }

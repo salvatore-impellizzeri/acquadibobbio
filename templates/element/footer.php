@@ -2,12 +2,13 @@
     <div class="footer__info">
         <div class="footer__info__agency">
             <span>azienda</span>
-            <span><?= $this->element('snippet', ['id' => 1])?> <?= date("Y") ?></span>
+            <div class="copyright"><?= $this->element('snippet', ['id' => 1])?> <?= date("Y") ?></div> 
+            <div><?= $this->element('snippet', ['id' => 18])?></div>
         </div>
         <div class="footer__info__contacts">
             <span>contatti</span>
-            <?= $this->element('snippet', ['id' => 15])?>
-            <?= $this->element('snippet', ['id' => 17])?>
+            <div><?= $this->element('snippet', ['id' => 15])?></div>
+            <div><?= $this->element('snippet', ['id' => 17])?></div>   
         </div>
     </div>
 

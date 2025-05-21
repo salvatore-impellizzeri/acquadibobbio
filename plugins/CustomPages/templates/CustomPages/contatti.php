@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="contacts__info__text-3">
-                    <?= $this->element('snippet', ['id' => 1])?> <?= date("Y") ?>
+                    <?= $this->element('snippet', ['id' => 1])?> <span><?= date("Y") ?></span> <?= $this->element('snippet', ['id' => 18])?>
                 </div>
             </div>
         </div>
