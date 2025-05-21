@@ -1,5 +1,5 @@
 <div class="triple-img <?= $extraClass ?? '' ?>">
-    <?php foreach ($images as $img) { ?>
-        <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+    <?php foreach (array_values($images) as $i => $img) { ?>
+        <img class="<?= $animation ?? '' ?>TripleImg-<?= $i ?>" data-animated src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
     <?php } ?>
 </div>

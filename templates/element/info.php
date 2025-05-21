@@ -1,8 +1,10 @@
 <div class="info <?= $extraClass ?? '' ?>">
-    <h2 class="font-64">
+    <h2 class="font-64 opacity" data-animated>
         <?= $title ?>
     </h2>
-    <?= $text ?>
+    <div class="fadeFromTopText" data-animated>
+        <?= $text ?>
+    </div>
     <?php if(isset($label)): ?>
         <?= $this->element('cta', [
             'label' => $label,

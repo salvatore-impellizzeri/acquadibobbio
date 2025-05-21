@@ -2,8 +2,8 @@
 
     <!-- TITOLO -->
     <div class="text-center product__title font-64">
-        <h1 class="uppercase"><?= $item->title ?></h1>
-        <div class="font-secondary fw-light font-20"><?= $item->subname ?? ''?></div>
+        <h1 class="uppercase opacity" data-animated><?= $item->title ?></h1>
+        <div class="font-secondary fw-light font-20 fadeFromTopText" data-animated><?= $item->subname ?? ''?></div>
     </div>
     <?php if (!empty($images['preview'])): ?>
         <div class="product__preview m-auto mb-251 imgWidthProduct" data-animated>
@@ -12,7 +12,7 @@
     <?php endif; ?>
 
     <!-- DESCRIZIONE -->
-    <div class="product__description font-48 mb-307 text-center m-auto container-paragraph">
+    <div class="product__description font-48 mb-307 text-center m-auto container-paragraph fadeFromTop" data-animated>
         <?php echo $item->description ?>
     </div>
 
@@ -46,7 +46,8 @@
     <!-- TRIPLE IMG -->
     <?= $this->element('triple-img', [
         'images' => $images['gallery_1'],
-        'extraClass' => 'triple-img--products mb-245'
+        'extraClass' => 'triple-img--products mb-245',
+        'animation' => 'product'
     ]) ?>
 
     <!-- DETTAGLI -->
