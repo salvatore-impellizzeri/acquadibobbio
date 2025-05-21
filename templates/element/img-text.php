@@ -1,4 +1,4 @@
-<div class="img-text container-l <?= $extraClass ?? '' ?>">
+<div class="img-text <?= $extraClass ?? '' ?>">
     <div class="img-text__img imgWidth" data-animated>
         <?php if($img): ?>
             <img src="<?= $this->Frontend->image($img) ?>" alt="<?= $alt ?>">

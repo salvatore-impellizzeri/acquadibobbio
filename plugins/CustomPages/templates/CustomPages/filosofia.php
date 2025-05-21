@@ -10,7 +10,8 @@
     <!-- IMMAGINI -->
     <?= $this->element('triple-img', [
         'images' => $images['gallery-1'],
-        'extraClass' => 'triple-img--secondary mb-175'
+        'extraClass' => 'triple-img--secondary mb-175',
+        'animation' => 'philosophy'
     ]) ?>
 
     <!-- NATURA -->
@@ -23,14 +24,14 @@
         <div class="cols-3 m-auto">
             <?php foreach ($images['gallery-2'] as $img) { ?>
                 <?php if($img['path']): ?>
-                    <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
+                    <img class="scaleOut" data-animated src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
                 <?php endif; ?>
             <?php } ?>
         </div>
     </div>
 
     <!-- PARAGRAFO -->
-    <div class="container-paragraph m-auto text-center font-48 mb-360">
+    <div class="container-paragraph m-auto text-center font-48 mb-360 fadeFromTop" data-animated>
         <?= $item->text_3 ?>
     </div>
 
