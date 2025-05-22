@@ -46,8 +46,8 @@ select {
     height: 55px;
     line-height: 55px;
     border-bottom: 1px solid @white;
-    .font-18;
     transition: 300ms;
+    .font-18;
     color: @white;
     &:focus {
         border-color: lighten(@input-border-color, 30%);
@@ -116,12 +116,14 @@ label {
             transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0);
             -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0);
             opacity: 0.5;
+            font-size: 12px;
         }
 
         textarea:focus + label {
             transform: translate3d(0, -165%, 0) translate3d(0, -40px, 0);
             -webkit-transform: translate3d(0, -165%, 0) translate3d(0, -40px, 0);
             opacity: 0.5;
+            font-size: 12px;
         }
         
         .error-message {

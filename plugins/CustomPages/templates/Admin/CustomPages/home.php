@@ -24,7 +24,6 @@
                     </legend>
                     <?php echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
                     <?php echo $this->Form->control('string_2', ['label' => 'Sottotitolo', 'extraClass' => 'span-10']); ?>
-                    <?php echo $this->element('admin/uploader/icon', ['scope' => 'logo', 'title' => 'Logo']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">

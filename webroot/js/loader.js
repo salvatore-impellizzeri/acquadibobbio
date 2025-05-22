@@ -111,10 +111,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 window.addEventListener("load", (event) => {
-
-  if (new Date().getTime() - start < 1000) {
-    window.setTimeout(loadSite, 1000 - (new Date().getTime() - start));
-  } else {
     loadSite();
-  }
 });

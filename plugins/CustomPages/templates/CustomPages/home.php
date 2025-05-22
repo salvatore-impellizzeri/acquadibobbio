@@ -4,9 +4,7 @@
         <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
         <div class="home__hero__content zoomInCustom" data-animated>
             <div class="home__hero__img opacityDelay-1" data-animated>
-                <?php if($images['logo']): ?>
-                    <img src="<?= $this->Frontend->image($images['logo']['path']); ?>" alt="<?= $images['logo']['title'] ?>">
-                <?php endif; ?>
+                <img src="img/logo.svg" alt="Logo Acqua di Bobbio">
             </div>
             <h1 class="opacityDelay-1" data-animated><?= $item->string_1 ?? '' ?></h1>
             <h4 class="opacityDelay-1" data-animated><?= $item->string_2 ?? '' ?></h4>
