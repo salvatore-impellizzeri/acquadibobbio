@@ -1,3 +1,5 @@
 <?php foreach ($menuItems as $item) { ?>
-    <?= $this->Frontend->svg("icons/$item->title.svg"); ?>
+    <a href="#">
+        <?= $this->Frontend->svg("icons/$item->title.svg"); ?>
+    </a>
 <?php } ?>

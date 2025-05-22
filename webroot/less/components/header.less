@@ -1,6 +1,7 @@
 .header{
     height: clamp(60px, 120vw * @px2vw, 120px);
     position: fixed;
+    width: 100%;
     top: 0;
     right: 0;
     padding-top: clamp(10px, 22vw * @px2vw, 22px);
@@ -40,6 +41,9 @@
     &__logo{
         flex: 0 0 220px;
         margin-right: auto;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        z-index: 10000;
 
         @media screen and (max-width: @l) {
             flex: 0 0 180px;
@@ -47,6 +51,13 @@
 
         @media screen and (max-width: @tablet-s) {
             flex: 0 1 160px;
+        }
+    }
+
+    &--open{
+        .header__logo{
+            opacity: 1;
+            transition-delay: 0.2s;
         }
     }
 

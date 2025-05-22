@@ -267,16 +267,20 @@ $(function () {
     });
 
     $menuToggler.on('click', function(){
-        if (isOpen) {
-            level = 0;
-            $menu.removeClass('open').attr('data-level', level);
-            $('.menu__item', $menu).removeClass('open');
-            isOpen = false;
-        } else {
-            $menu.addClass('open');
-            isOpen = true;
-        }
-    });
+		if (isOpen) {
+			level = 0;
+			$menu.removeClass('open').attr('data-level', level);
+			$('.menu__item', $menu).removeClass('open');
+			isOpen = false;
+
+			$('header').removeClass('header--open');
+		} else {
+			$menu.addClass('open');
+			isOpen = true;
+
+			$('header').addClass('header--open');
+		}
+	});
 });
 
 const lenis = new Lenis();
