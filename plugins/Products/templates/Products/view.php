@@ -87,7 +87,7 @@
     <div class="text-center mb-156">
         <?= $this->element('cta', [
             'label' => $item->button,
-            'url' => '#',
+            'url' => '/custom-pages/view/2',
         ]); ?>
     </div>
 
