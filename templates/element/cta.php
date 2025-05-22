@@ -1,7 +1,7 @@
 <?php if (empty($label)) return; ?>
 
 <?php if (!empty($url)) : ?>
-    <a class="cta fadeFromTopText <?= $extraClass ?? '' ?>" href="<?= $url ?>" data-animated>
+    <a class="cta fadeFromTopText <?= $extraClass ?? '' ?>" href="<?= $this->Frontend->url($url); ?>" data-animated>
         <span class="cta__label font-secondary">
             <?= $label ?>
         </span>

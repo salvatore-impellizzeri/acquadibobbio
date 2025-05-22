@@ -30,7 +30,7 @@
             'title' => $item->string_4,
             'text' => $item->text_1,
             'label' => $item->string_5, 
-            'url' => '#',
+            'url' => '/products/view/1',
         ]) ?>
         <div class="home__new-product__images">
             <?php
@@ -58,7 +58,7 @@
         'title' => $item->string_6,
         'text' => $item->text_3,
         'cta' => $item->string_7,
-        'url' => '#',
+        'url' => '/custom-pages/view/2',
         'word_1' => $item->string_8,
         'word_2' => $item->string_9,
         'extraClass' => 'mb-175'
