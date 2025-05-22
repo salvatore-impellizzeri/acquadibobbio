@@ -11,8 +11,10 @@
         </div>
     </div>
     <div class="img-text__text fadeFromTop" data-animated>
-        <h2 class="font-64"><?= $title ?? '' ?></h2>
-        <?= $text ?? '' ?>
+        <h2><?= $title ?? '' ?></h2>
+        <div class="img-text__text__paragraph">
+            <?= $text ?? '' ?>
+        </div>
         <?php if(isset($cta)) { ?>
             <?= $this->element('cta', [
                 'label' => $cta,

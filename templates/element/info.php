@@ -1,8 +1,8 @@
 <div class="info <?= $extraClass ?? '' ?>">
-    <h2 class="font-64 opacity" data-animated>
+    <h2 class="opacity" data-animated>
         <?= $title ?>
     </h2>
-    <div class="fadeFromTopText" data-animated>
+    <div class="fadeFromTopText info__text" data-animated>
         <?= $text ?>
     </div>
     <?php if(isset($label)): ?>

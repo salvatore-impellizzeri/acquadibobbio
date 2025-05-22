@@ -21,7 +21,7 @@
             'text' => $item->text_2,
             'extraClass' => 'mb-148'
         ]) ?>
-        <div class="cols-3 m-auto">
+        <div class="cols-3">
             <?php foreach ($images['gallery-2'] as $img) { ?>
                 <?php if($img['path']): ?>
                     <img class="scaleOut" data-animated src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
@@ -31,7 +31,7 @@
     </div>
 
     <!-- PARAGRAFO -->
-    <div class="container-paragraph m-auto text-center font-48 mb-360 fadeFromTop" data-animated>
+    <div class="paragraph fadeFromTop" data-animated>
         <?= $item->text_3 ?>
     </div>
 

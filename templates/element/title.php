@@ -1,6 +1,8 @@
 <div class="title fadeFromBottom <?= $extraClass ?? '' ?>" data-animated>
-    <h1 class="font-96">
+    <h1>
         <?= $title ?>
     </h1>
-    <?= $text ?>
+    <div class="title__text">
+        <?= $text ?>
+    </div>
 </div>
