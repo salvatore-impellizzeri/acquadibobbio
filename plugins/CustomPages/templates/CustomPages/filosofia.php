@@ -10,7 +10,7 @@
     <!-- IMMAGINI -->
     <?= $this->element('triple-img', [
         'images' => $images['gallery-1'],
-        'extraClass' => 'triple-img--secondary mb-175',
+        'extraClass' => 'triple-img--secondary',
         'animation' => 'philosophy'
     ]) ?>
 
