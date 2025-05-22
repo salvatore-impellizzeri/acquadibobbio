@@ -14,9 +14,9 @@
         'textAnimationm' => $textAnimation ?? null,
        ]); ?>
     </div>
-    <div class="prodotti__cols <?= $productsAnimation ?? '' ?>" data-animated>
+    <div class="prodotti__cols">
         <?php foreach ($products as $product) { ?>
-            <a href="<?= $this->Frontend->url('/products/view/' . $product->id); ?>" class="prodotti__item">
+            <a href="<?= $this->Frontend->url('/products/view/' . $product->id); ?>" class="prodotti__item <?= $productsAnimation ?? '' ?>" data-animated>
                 <div class="prodotti__img">
                     <?php if($product->preview->path): ?>
                         <img src="<?= $this->Frontend->resize($product->preview->path, 414 * 2); ?>" alt="<?= $product->title ?>">

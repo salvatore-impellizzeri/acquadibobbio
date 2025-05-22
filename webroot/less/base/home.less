@@ -11,6 +11,8 @@
         gap: 2.85rem;
 
         &__content{
+            .container-hero;
+            .text-center;
             background-color: #0E0E0EE6;
             display: grid;
             grid-template-columns: 1fr;
@@ -21,6 +23,13 @@
             h1{
                 width: clamp(300px, 850vw * @px2vw, 850px);
                 margin-bottom: 0.53em;
+                .font-96;
+            }
+
+            h4{
+                .font-20;
+                .font-secondary;
+                .fw-light;
             }
         }
 
@@ -38,6 +47,7 @@
         &__img{
             width: clamp(100px, 287vw * @px2vw, 287px);
             height: clamp(90px, 194vw * @px2vw, 194px);
+            .mb-44;
 
             img{
                 width: 100%;
@@ -51,6 +61,10 @@
             align-items: center;
             justify-content: center;
             gap: clamp(8px, 11.21vw * @px2vw, 11.21px);
+            .font-20; 
+            .fw-book; 
+            .font-secondary;
+            .text-center;
         }
     }
 

@@ -2,12 +2,13 @@
     .text-center;
     .container-prodotti;
     .m-auto;
-    overflow: hidden;
 
     @media screen and (max-width: @tablet-m) {
         width: fit-content;
+        overflow: hidden;
+
     }
-    
+
     &__cols{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -35,7 +36,9 @@
             }
 
             .cta{
-                transform: translateY(-7px);
+                &__border{
+                    transform: scaleX(0.5);
+                }
             }
         }
     }

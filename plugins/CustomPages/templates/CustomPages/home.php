@@ -2,16 +2,16 @@
     <!-- HERO -->
     <div class="home__hero">
         <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
-        <div class="home__hero__content container-hero text-center zoomIn" data-animated>
-            <div class="home__hero__img mb-44 opacityDelay-1" data-animated>
+        <div class="home__hero__content zoomInCustom" data-animated>
+            <div class="home__hero__img opacityDelay-1" data-animated>
                 <?php if($images['logo']): ?>
                     <img src="<?= $this->Frontend->image($images['logo']['path']); ?>" alt="<?= $images['logo']['title'] ?>">
                 <?php endif; ?>
             </div>
-            <h1 class="font-96 opacityDelay-1" data-animated><?= $item->string_1 ?? '' ?></h1>
-            <h4 class="font-20 fw-light font-secondary opacityDelay-1" data-animated><?= $item->string_2 ?? '' ?></h4>
+            <h1 class="opacityDelay-1" data-animated><?= $item->string_1 ?? '' ?></h1>
+            <h4 class="opacityDelay-1" data-animated><?= $item->string_2 ?? '' ?></h4>
         </div>
-        <div class="font-20 fw-book font-secondary home__hero__scroll text-center fadeFromTopDelay-1" data-animated>
+        <div class="home__hero__scroll fadeFromTopDelay-1" data-animated>
             Scroll <?= $this->Frontend->svg('icons/arrow-down.svg') ?>
         </div>
     </div>

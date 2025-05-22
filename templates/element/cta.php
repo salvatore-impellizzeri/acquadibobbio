@@ -5,11 +5,13 @@
         <span class="cta__label font-secondary">
             <?= $label ?>
         </span>
+        <div class="cta__border"></div>
     </a>
 <?php else : ?>
     <button class="cta fadeFromTopText <?= $extraClass ?? '' ?>" type="submit" data-animated>
         <span class="cta__label font-secondary">
             <?= $label ?>
         </span>
+        <div class="cta__border"></div>
     </button>
 <?php endif; ?>
