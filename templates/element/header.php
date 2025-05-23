@@ -7,9 +7,9 @@ $languages = Configure::read('Setup.languages');
 ?>
 
 <header class="header fadeFromTop" data-animated>
-    <div class="header__logo">
+    <a href="<?= $homeLink ?>" class="header__logo">
         <img src="img/logo.svg" alt="Logo Acqua di Bobbio">
-    </div>
+    </a>
     <div class="header__hamburger">
         <?php echo $this->element('hamburger'); ?>
     </div>

@@ -5,15 +5,6 @@
 // Var per geneerare vw da px (Es 100vw*@px2vw) == 
 @px2vw: 0.05208;
 
-// COLORI
-@bg-color: #fff;
-@header-bg-color: #fff;
-@text-color: #000000;
-@light-text-color: #FFF;
-@main-color: deeppink;
-@border-color: #e0e0e0;
-@gallery-bg: #bcd3ec;
-
 // PALETTE 
 @black: #000;
 @blue: #215490;
@@ -22,9 +13,19 @@
 @cream: #E5DEDC;
 @white: #FFF;
 
+// COLORI
+@bg-color: @white;
+@header-bg-color: transparent;
+@secondary-bg-color: @black;
+@text-color: @black;
+@light-text-color: @white;
+@main-color: deeppink;
+@border-color: @white;
+@gallery-bg: #bcd3ec;
+
 //pulsanti
-@cta-border: #000;
-@cta-color: #000;
+@cta-border: @black;
+@cta-color: @black;
 @cta-bg: #f0f0f0;
 
 //cta
@@ -32,8 +33,10 @@
 @page-cta-color: #fff;
 
 //footer
-@footer-bg: #ebebeb;
-@footer-color: #000;
+@footer-bg: @white;
+@footer-bg-secondary: @black;
+@footer-color-secondary: rgba(255, 255, 255, 0.500);
+@footer-color: @black;
 
 
 @input-border-color: #000;
