@@ -93,7 +93,7 @@
 
     <!-- BIG IMG -->
     <?= $this->element('big-img', [
-        'img' => 'img/video/video-2.mp4',
+        'img' => 'video/video-2.mp4',
         'text' => $item->video_text,
         'video' => true,
     ]) ?>

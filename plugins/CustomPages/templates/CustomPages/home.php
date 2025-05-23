@@ -1,7 +1,7 @@
 <div class="home">
     <!-- HERO -->
     <div class="home__hero">
-        <video src="img/video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
+        <video src="video/ADB_Hero.mp4" autoplay muted loop playsinline></video>
         <div class="home__hero__content zoomInCustom" data-animated>
             <div class="home__hero__img opacityDelay-1" data-animated>
                 <img src="img/logo.svg" alt="Logo Acqua di Bobbio">

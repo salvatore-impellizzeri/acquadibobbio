@@ -3,6 +3,7 @@
 /config/.env
 /logs/*
 /tmp/*
+/webroot/media/*
 
 # OS generated files #
 ######################

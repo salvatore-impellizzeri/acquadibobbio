@@ -3,7 +3,7 @@
 ?>
 
 <div class="contacts">
-    <video src="img/video/ADB_Contatti.mp4" autoplay muted loop playsinline></video>
+    <video src="video/ADB_Contatti.mp4" autoplay muted loop playsinline></video>
     <div class="container-text m-auto">
         <div class="contacts__info opacity" data-animated>
             <h1><?= $item->string_1 ?? '' ?></h1>
