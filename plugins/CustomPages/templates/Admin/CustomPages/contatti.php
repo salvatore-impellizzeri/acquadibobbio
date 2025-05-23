@@ -12,7 +12,7 @@ $this->extend('/Admin/Common/edit');
                     <?php
                     echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-10']);
                     echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-2']);
-                    echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']);
+                    echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-12']);
                     echo $this->Form->editor('text_1', ['label' => 'Recapiti']);
                     ?>
                 </fieldset>

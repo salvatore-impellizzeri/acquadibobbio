@@ -22,24 +22,24 @@
                     <legend class="input-group__info">
                         Hero
                     </legend>
-                    <?php echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
-                    <?php echo $this->Form->control('string_2', ['label' => 'Sottotitolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->control('string_1', ['label' => 'Titolo', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->control('string_2', ['label' => 'Sottotitolo', 'extraClass' => 'span-12']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">
                     <legend class="input-group__info">
                         Sezione prodotti
                     </legend>
-                    <?php echo $this->Form->control('string_3', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
+                    <?php echo $this->Form->control('string_3', ['label' => 'Titolo', 'extraClass' => 'span-12']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">
                     <legend class="input-group__info">
                         Nuovo prodotto
                     </legend>
-                    <?php echo $this->Form->control('string_4', ['label' => 'Titolo', 'extraClass' => 'span-10']); ?>
-                    <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-10']); ?>
-                    <?php echo $this->Form->inlineEditor('string_5', ['label' => 'Bottone', 'class' => 'span-10']); ?> 
+                    <?php echo $this->Form->control('string_4', ['label' => 'Titolo', 'extraClass' => 'span-12']); ?>
+                    <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-12']); ?>
+                    <?php echo $this->Form->inlineEditor('string_5', ['label' => 'Bottone', 'class' => 'span-12']); ?> 
                     <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery-1', 'title' => 'Immagini nuovo prodotto']); ?>
                 </fieldset>
 
