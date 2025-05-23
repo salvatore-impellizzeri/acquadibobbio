@@ -293,28 +293,29 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 // SWIPER LOOP
-
-const swiperMethods = new Swiper('.swiper--loop', {
- 	spaceBetween: 19,
-	speed: 6000,
-	autoplay: {
-		delay: 1,
-		disableOnInteraction: false,
-	},
-	loop: true,
-	slidesPerView: 2.3,
-	allowTouchMove: false,
-	loopAdditionalSlides: 3,
-	touchMoveStopPropagation: false,
-	breakpoints: {
-		800: {
-			slidesPerView: 4,
+document.addEventListener('DOMContentLoaded', () => {
+	const swiperMethods = new Swiper('.swiper--loop', {
+		spaceBetween: 19,
+		speed: 6000,
+		autoplay: {
+			delay: 1,
+			disableOnInteraction: false,
 		},
-
-		500: {
-			slidesPerView: 3.5,
+		loop: true,
+		slidesPerView: 2.3,
+		allowTouchMove: false,
+		loopAdditionalSlides: 3,
+		touchMoveStopPropagation: false,
+		breakpoints: {
+			800: {
+				slidesPerView: 4,
+			},
+	
+			500: {
+				slidesPerView: 3.5,
+			}
 		}
-	}
+	});
 });
 
 // CURSOR

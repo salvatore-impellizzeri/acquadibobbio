@@ -63,16 +63,16 @@
     ]) ?>
 
     <!-- GALLERY LOOP -->
+    <?php
+        $gallery = $images['gallery-2'];
+        while (count($gallery) < 8) {
+            $gallery = array_merge($gallery, $images['gallery-2']);
+        }
+    ?>
+
     <div class="swiper swiper--loop">
         <div class="swiper-wrapper">
-            <?php foreach ($images['gallery-2'] as $img) { ?>
-                <?php if($img['path']): ?>
-                    <div class="swiper-slide">
-                        <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
-                    </div>
-                <?php endif; ?>
-            <?php } ?>
-            <?php foreach ($images['gallery-2'] as $img) { ?>
+            <?php foreach ($gallery as $img) { ?>
                 <?php if($img['path']): ?>
                     <div class="swiper-slide">
                         <img src="<?= $this->Frontend->image($img['path']); ?>" alt="<?= $img['title'] ?>">
