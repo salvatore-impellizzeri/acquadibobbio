@@ -1,4 +1,4 @@
-<div class="<?= $extraClass ?? '' ?>">
+<div class="<?= $extraClass ?? '' ?> footer-wrapper">
     <footer class="footer fadeFromBottom" data-animated>
         <div class="footer__info">
             <div class="footer__info__agency">
