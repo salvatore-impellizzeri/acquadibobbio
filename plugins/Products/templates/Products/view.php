@@ -12,7 +12,7 @@
     <?php endif; ?>
 
     <!-- DESCRIZIONE -->
-    <div class="product__description font-48 mb-307 text-center m-auto container-paragraph fadeFromTop" data-animated>
+    <div class="product__description fadeFromTop" data-animated>
         <?php echo $item->description ?>
     </div>
 

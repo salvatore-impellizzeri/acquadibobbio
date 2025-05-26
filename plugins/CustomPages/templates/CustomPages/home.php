@@ -9,7 +9,7 @@
             <h1 class="opacityDelay-1" data-animated><?= $item->string_1 ?? '' ?></h1>
             <h4 class="opacityDelay-1" data-animated><?= $item->string_2 ?? '' ?></h4>
         </div>
-        <div class="home__hero__scroll fadeFromTopDelay-1" data-animated>
+        <div class="home__hero__scroll pulse" data-animated>
             Scroll <?= $this->Frontend->svg('icons/arrow-down.svg') ?>
         </div>
     </div>

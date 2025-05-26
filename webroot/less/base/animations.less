@@ -510,3 +510,25 @@
   animation: scaleOut 1s ease-in-out forwards;
 }
 
+
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pulse {
+  opacity: 0;
+}
+
+.pulse.is-in {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+

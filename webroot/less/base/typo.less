@@ -8,6 +8,7 @@ body{
     color: @text-color;
     font-family: @main-font;
     font-size: 1rem;
+    font-style: italic;
 }
 
 a{
@@ -105,6 +106,7 @@ li{
 
 .font-secondary{
     font-family: @second-font;
+    font-style: normal;
 }
 
 
@@ -149,7 +151,7 @@ li{
 
 .font-48{
     font-size: clamp(27px, 48vw * @px2vw, 48px);
-    .em(48, 102.3)
+    line-height: 1.023em;
 }
 
 .font-37{
@@ -187,12 +189,12 @@ li{
 
 .font-18{
     font-size: clamp(14px, 18vw * @px2vw, 18px);
-    line-height: 1.40em;
+    line-height: 1.4em;
 }
 
 .font-16{
     font-size: clamp(13px, 16vw * @px2vw, 16px);
-    line-height: 1.40em;
+    line-height: 1.4em;
 }
 
 .font-15{
