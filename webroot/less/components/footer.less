@@ -59,6 +59,7 @@
             }
 
             span{
+                .font-18;
                 display: block;
                 .fw-medium;
                 .uppercase;
@@ -131,10 +132,14 @@
         opacity: 30%;
         width: 100%;
         text-align: center;
-        .font-120;
         position: absolute;
-        bottom: -0.19em;
+        bottom: -1.6em;
         left: 0;
+
+        p{
+            font-style: italic;
+            .font-120;
+        }
     }
 
     &--contacts{
@@ -176,7 +181,7 @@
         margin: 0;
 
         span{
-            margin-bottom: 2px;
+            margin-bottom: 0;
         }
 
         @media screen and (max-width: @tablet-m) {

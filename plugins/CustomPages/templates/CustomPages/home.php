@@ -19,7 +19,7 @@
         'title' => $item->string_3,
         'titleClass' => 'font-64 mb-134 pt-h fadeFromLeft',
         'productsAnimation' => 'fadeFromRight',
-        'extraClass' => 'mb-214'
+        'extraClass' => 'mb-214',
     ]) ?>
 
     <!-- NEW PRODUCT -->

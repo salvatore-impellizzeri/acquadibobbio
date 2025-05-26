@@ -11,7 +11,7 @@
         'title' => $title,
         'text' => $text ?? null,
         'extraClass' => $titleClass ?? null,
-        'textAnimationm' => $textAnimation ?? null,
+        'textAnimation' => $textAnimation ?? null,
        ]); ?>
     </div>
     <div class="prodotti__cols">

@@ -1,9 +1,9 @@
-<div class="pt-h mb-193">
+<div class="pt-h mb-148">
     <?= $this->element('prodotti', [
         'title' => $item->string_1,
         'text' => $item->text_1,
-        'extraClass' => 'mb-80',
-        'titleClass' => 'fadeFromBottom',
+        'extraClass' => '',
+        'titleClass' => 'uppercase',
         'productsAnimation' => 'fadeFromRight'
     ]) ?>
 </div>
