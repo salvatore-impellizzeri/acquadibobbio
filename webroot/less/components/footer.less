@@ -138,17 +138,10 @@
     }
 
     &--contacts{
-        position: relative;
-
-        &::before{
-            background-color: @secondary-bg-color;
-            width: 100%;
-            height: 100%;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
 
         .footer{
             grid-template-columns: 1fr;
@@ -158,7 +151,7 @@
             }
     
             &__legal{
-                color: @footer-color-secondary;
+                color: @light-text-color;
                 .text-center;
                 margin: auto;
                 justify-items: center;
@@ -167,13 +160,12 @@
                 svg{
                     path{
                         fill: @footer-color-secondary;
-                        opacity: 50%;
                     }
                 }
             }
     
             &__bottom{
-                color: @footer-color-secondary;
+                color: @light-text-color;
             }
         }
     }
