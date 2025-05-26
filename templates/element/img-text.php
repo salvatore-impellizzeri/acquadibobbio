@@ -1,7 +1,7 @@
 <div class="img-text <?= $extraClass ?? '' ?>">
     <div class="img-text__img imgWidth" data-animated>
         <?php if($img): ?>
-            <img src="<?= $this->Frontend->image($img) ?>" alt="<?= $alt ?>">
+            <img class="imgWidthIMG" data-animated src="<?= $this->Frontend->image($img) ?>" alt="<?= $alt ?>">
         <?php endif; ?> 
         <div class="img-text__img__word-1 opacity" data-animated>
             <?= $word_1 ?? '' ?>
