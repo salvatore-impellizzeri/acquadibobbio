@@ -4,7 +4,8 @@
     <?= $this->element('title', [
         'title' => $item->string_1,
         'text' => $item->text_1,
-        'extraClass' => 'mb-105'
+        'extraClass' => 'mb-105',
+        'titleClass' => 'uppercase'
     ]); ?>
 
     <!-- IMMAGINI -->

@@ -17,9 +17,10 @@
     <!-- PRODOTTI -->
     <?= $this->element('prodotti', [
         'title' => $item->string_3,
-        'titleClass' => 'font-64 mb-134 pt-h fadeFromLeft',
+        'titleClass' => 'font-64',
         'productsAnimation' => 'fadeFromRight',
         'extraClass' => 'mb-214',
+        'titleExtraClass' => 'fadeFromLeft pt-h mb-134'
     ]) ?>
 
     <!-- NEW PRODUCT -->

@@ -10,7 +10,8 @@
        <?= $this->element('title', [
         'title' => $title,
         'text' => $text ?? null,
-        'extraClass' => $titleClass ?? null,
+        'extraClass' => $titleExtraClass ?? null,
+        'titleClass' => $titleClass ?? null,
         'textAnimation' => $textAnimation ?? null,
        ]); ?>
     </div>
